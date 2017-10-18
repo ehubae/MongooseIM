@@ -1,0 +1,1566 @@
+2017-10-14 10:16:49 =ERROR REPORT====
+** State machine <0.8780.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.32731.11>,#Ref<0.0.8388610.147737>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,961804,17672}}}
+** When State == session_established
+**      Data  == {state,<0.13446.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:16:49 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8780.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13446.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 139783
+  neighbours:
+2017-10-14 10:16:49 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8780.11>},{id,3},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 10:17:37 =ERROR REPORT====
+** State machine <0.13016.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.32747.11>,#Ref<0.0.6029316.79155>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,961852,501320}}}
+** When State == session_established
+**      Data  == {state,<0.13018.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:17:37 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13016.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13018.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 92980
+  neighbours:
+2017-10-14 10:17:37 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13016.11>},{id,9},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 10:18:35 =ERROR REPORT====
+** State machine <0.7869.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.2.12>,#Ref<0.0.9437185.248813>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,961910,105990}}}
+** When State == session_established
+**      Data  == {state,<0.13473.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:18:35 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.7869.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13473.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 142324
+  neighbours:
+2017-10-14 10:18:35 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.7869.11>},{id,4},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 10:20:02 =ERROR REPORT====
+** State machine <0.13012.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.509.0>,#Ref<0.0.9437185.249690>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,961997,879864}}}
+** When State == session_established
+**      Data  == {state,<0.13014.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:20:02 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13012.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13014.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 91082
+  neighbours:
+2017-10-14 10:20:02 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13012.11>},{id,10},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 10:20:08 =ERROR REPORT====
+** State machine <0.14987.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.37.12>,#Ref<0.0.6029316.80355>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"3sz9wepf1na27">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,962003,872583}}}
+** When State == session_established
+**      Data  == {state,<0.14989.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:20:08 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.14987.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.14989.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 82877
+  neighbours:
+2017-10-14 10:20:08 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.14987.11>},{id,1},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 10:20:13 =ERROR REPORT====
+** State machine <0.13073.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.37.12>,#Ref<0.0.9437185.249784>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"35kfvg9vn1ii5">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,962008,874870}}}
+** When State == session_established
+**      Data  == {state,<0.13075.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:20:13 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13073.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13075.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 90956
+  neighbours:
+2017-10-14 10:20:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13073.11>},{id,2},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 10:20:18 =ERROR REPORT====
+** State machine <0.13004.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.37.12>,#Ref<0.0.6029316.80470>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"3532f9hwmhbne">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,962013,883422}}}
+** When State == session_established
+**      Data  == {state,<0.13006.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 10:20:18 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13004.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13006.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 91641
+  neighbours:
+2017-10-14 10:20:18 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13004.11>},{id,5},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 11:45:23 =ERROR REPORT====
+** State machine <0.53.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.1951.12>,#Ref<0.0.7602179.65059>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,967118,316436}}}
+** When State == session_established
+**      Data  == {state,<0.55.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 11:45:23 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.53.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.55.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 11598
+  neighbours:
+2017-10-14 11:45:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.53.12>},{id,5},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 11:47:54 =ERROR REPORT====
+** State machine <0.42.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.2016.12>,#Ref<0.0.9699329.46042>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,967269,157142}}}
+** When State == session_established
+**      Data  == {state,<0.44.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 11:47:54 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.42.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.44.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 10931
+  neighbours:
+2017-10-14 11:47:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.42.12>},{id,1},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 11:49:56 =ERROR REPORT====
+** State machine <0.32732.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.2062.12>,#Ref<0.0.9699329.46492>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,967391,131127}}}
+** When State == session_established
+**      Data  == {state,<0.32734.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 11:49:56 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.32732.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.32734.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 15900
+  neighbours:
+2017-10-14 11:49:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.32732.11>},{id,3},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 11:54:56 =ERROR REPORT====
+** State machine <0.48.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.2181.12>,#Ref<0.0.7602179.69645>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,967691,169237}}}
+** When State == session_established
+**      Data  == {state,<0.50.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 11:54:56 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.48.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.50.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 13176
+  neighbours:
+2017-10-14 11:54:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.48.12>},{id,2},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 11:59:41 =ERROR REPORT====
+** State machine <0.13025.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.2302.12>,#Ref<0.0.9699329.52003>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,967976,230523}}}
+** When State == session_established
+**      Data  == {state,<0.13027.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 11:59:41 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13025.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13027.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 104650
+  neighbours:
+2017-10-14 11:59:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13025.11>},{id,8},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 12:01:04 =ERROR REPORT====
+** State machine <0.32748.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.2333.12>,#Ref<0.0.7602179.72203>},{sql_cmd,{sql_query,["SELECT luser, lserver, aff FROM muc_light_occupants WHERE room_id = ",<<"830">>]},{1507,968059,269414}}}
+** When State == session_established
+**      Data  == {state,<0.32750.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 12:01:04 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.32748.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.32750.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 16960
+  neighbours:
+2017-10-14 12:01:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.32748.11>},{id,9},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 12:48:38 =ERROR REPORT====
+** State machine <0.38.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.3388.12>,#Ref<0.0.9699329.88208>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,970913,246950}}}
+** When State == session_established
+**      Data  == {state,<0.40.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 12:48:38 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.38.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.40.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 18994
+  neighbours:
+2017-10-14 12:48:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.38.12>},{id,10},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 13:19:03 =ERROR REPORT====
+** State machine <0.5.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.4062.12>,#Ref<0.0.8388610.233491>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,972738,530011}}}
+** When State == session_established
+**      Data  == {state,<0.7.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 13:19:03 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.5.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.7.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 21405
+  neighbours:
+2017-10-14 13:19:03 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.5.12>},{id,4},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 13:19:29 =ERROR REPORT====
+** State machine <0.2017.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.4073.12>,#Ref<0.0.9699329.108107>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,972764,877599}}}
+** When State == session_established
+**      Data  == {state,<0.2019.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 13:19:29 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.2017.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: [{'$gen_sync_all_state_event',{<0.15288.4>,#Ref<0.0.9699329.108636>},get_db_info}]
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.2019.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 14961
+  neighbours:
+2017-10-14 13:19:29 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.2017.12>},{id,1},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 14:10:38 =ERROR REPORT====
+** State machine <0.13043.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.5205.12>,#Ref<0.0.9699329.144236>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971506666666">>,<<"';">>]},{1507,975833,385312}}}
+** When State == session_established
+**      Data  == {state,<0.13045.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 14:10:38 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13043.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13045.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 117274
+  neighbours:
+2017-10-14 14:10:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13043.11>},{id,7},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 14:11:07 =ERROR REPORT====
+** State machine <0.2063.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.5219.12>,#Ref<0.0.7602179.120200>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971506666666">>,<<"';">>]},{1507,975862,639387}}}
+** When State == session_established
+**      Data  == {state,<0.2065.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 14:11:07 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.2063.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.2065.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 22505
+  neighbours:
+2017-10-14 14:11:07 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.2063.12>},{id,3},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 14:11:58 =ERROR REPORT====
+** State machine <0.2334.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.5242.12>,#Ref<0.0.8650754.2119>},{sql_cmd,{sql_query,["SELECT version, opt, val"," FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_config AS c ON r.id = c.room_id WHERE r.luser = '",<<"17reoqnd972au">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,975913,161021}}}
+** When State == session_established
+**      Data  == {state,<0.2336.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 14:11:58 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.2334.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.2336.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 17533
+  neighbours:
+2017-10-14 14:11:58 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.2334.12>},{id,9},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 14:13:04 =ERROR REPORT====
+** State machine <0.7837.11> terminating 
+** Last message in was {'$gen_sync_event',{<0.5272.12>,#Ref<0.0.6029316.163774>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971506666666">>,<<"';">>]},{1507,975979,812178}}}
+** When State == session_established
+**      Data  == {state,<0.7839.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 14:13:04 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.7837.11>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: [{'$gen_sync_all_state_event',{<0.15288.4>,#Ref<0.0.8650754.4245>},get_db_info}]
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.7839.11>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 146798
+  neighbours:
+2017-10-14 14:13:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.7837.11>},{id,6},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 14:13:38 =ERROR REPORT====
+** State machine <0.2303.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.5289.12>,#Ref<0.0.6029316.164040>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971551727378">>,<<"';">>]},{1507,976013,759012}}}
+** When State == session_established
+**      Data  == {state,<0.2305.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 14:13:38 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.2303.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.2305.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 22576
+  neighbours:
+2017-10-14 14:13:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.2303.12>},{id,8},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 14:51:44 =ERROR REPORT====
+** State machine <0.1952.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.6111.12>,#Ref<0.0.8650754.33010>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,978299,627852}}}
+** When State == session_established
+**      Data  == {state,<0.1954.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 14:51:44 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.1952.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.1954.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 25196
+  neighbours:
+2017-10-14 14:51:44 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.1952.12>},{id,5},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:15:31 =ERROR REPORT====
+** State machine <0.6112.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.7976.12>,#Ref<0.0.8650754.74526>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971561770101">>,<<"';">>]},{1507,983326,806097}}}
+** When State == session_established
+**      Data  == {state,<0.6114.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:15:31 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.6112.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.6114.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 10494
+  neighbours:
+2017-10-14 16:15:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.6112.12>},{id,5},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:15:55 =ERROR REPORT====
+** State machine <0.5290.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.7990.12>,#Ref<0.0.9699329.216378>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971561770101">>,<<"';">>]},{1507,983350,245080}}}
+** When State == session_established
+**      Data  == {state,<0.5292.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:15:55 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.5290.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.5292.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 15717
+  neighbours:
+2017-10-14 16:15:55 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.5290.12>},{id,8},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:16:04 =ERROR REPORT====
+** State machine <0.5220.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.7996.12>,#Ref<0.0.9699329.216457>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971561770101">>,<<"';">>]},{1507,983359,61249}}}
+** When State == session_established
+**      Data  == {state,<0.5222.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:16:04 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.5220.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.5222.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 20400
+  neighbours:
+2017-10-14 16:16:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.5220.12>},{id,3},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:16:17 =ERROR REPORT====
+** State machine <0.5206.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.777.0>,#Ref<0.0.7602179.163841>},{sql_cmd,{sql_query,[<<"select vcard from vcard where username='">>,<<"971561770101">>,<<"' and server='">>,<<"chat.devinprocess.com">>,"';"]},{1507,983372,65584}}}
+** When State == session_established
+**      Data  == {state,<0.5208.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:16:17 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.5206.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.5208.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 16886
+  neighbours:
+2017-10-14 16:16:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.5206.12>},{id,7},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:17:57 =ERROR REPORT====
+** State machine <0.2182.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.509.0>,#Ref<0.0.8650754.75792>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,983472,790848}}}
+** When State == session_established
+**      Data  == {state,<0.5554.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:17:57 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.2182.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.5554.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 57638
+  neighbours:
+2017-10-14 16:17:57 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.2182.12>},{id,2},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:18:04 =ERROR REPORT====
+** State machine <0.4063.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.8043.12>,#Ref<0.0.9699329.218507>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"3sz9wepf1na27">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,983479,193069}}}
+** When State == session_established
+**      Data  == {state,<0.4065.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:18:04 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.4063.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.4065.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 25468
+  neighbours:
+2017-10-14 16:18:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.4063.12>},{id,4},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:18:09 =ERROR REPORT====
+** State machine <0.5273.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.8043.12>,#Ref<0.0.9699329.218549>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"35kfvg9vn1ii5">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,983484,197477}}}
+** When State == session_established
+**      Data  == {state,<0.5275.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:18:09 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.5273.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.5275.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 19069
+  neighbours:
+2017-10-14 16:18:09 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.5273.12>},{id,6},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:18:14 =ERROR REPORT====
+** State machine <0.4078.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.8043.12>,#Ref<0.0.8650754.76042>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"281eacfa2o23h">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,983489,306953}}}
+** When State == session_established
+**      Data  == {state,<0.4080.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:18:14 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.4078.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.4080.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 22715
+  neighbours:
+2017-10-14 16:18:14 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.4078.12>},{id,1},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 16:18:19 =ERROR REPORT====
+** State machine <0.3389.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.8043.12>,#Ref<0.0.7602179.165035>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"1jrdsx3vu211m">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,983494,315071}}}
+** When State == session_established
+**      Data  == {state,<0.3391.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 16:18:19 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.3389.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.3391.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 29853
+  neighbours:
+2017-10-14 16:18:19 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.3389.12>},{id,10},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:21:48 =ERROR REPORT====
+** State machine <0.7991.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10739.12>,#Ref<0.0.9961473.21935>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,990903,463002}}}
+** When State == session_established
+**      Data  == {state,<0.7993.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:21:48 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.7991.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.7993.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 19228
+  neighbours:
+2017-10-14 18:21:48 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.7991.12>},{id,8},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:22:19 =ERROR REPORT====
+** State machine <0.8069.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10747.12>,#Ref<0.0.7602179.216501>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,990934,160944}}}
+** When State == session_established
+**      Data  == {state,<0.8071.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:22:19 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8069.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.8071.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 29479
+  neighbours:
+2017-10-14 18:22:19 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8069.12>},{id,10},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:22:54 =ERROR REPORT====
+** State machine <0.7997.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10763.12>,#Ref<0.0.6029316.256571>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,990969,32218}}}
+** When State == session_established
+**      Data  == {state,<0.7999.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:22:54 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.7997.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.7999.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 22863
+  neighbours:
+2017-10-14 18:22:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.7997.12>},{id,3},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:23:52 =ERROR REPORT====
+** State machine <0.8060.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10785.12>,#Ref<0.0.7602179.217385>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,991027,954710}}}
+** When State == session_established
+**      Data  == {state,<0.8062.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:23:52 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8060.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.8062.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 34152
+  neighbours:
+2017-10-14 18:23:52 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8060.12>},{id,6},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:27:44 =ERROR REPORT====
+** State machine <0.8013.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.509.0>,#Ref<0.0.9961473.24517>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,991259,356948}}}
+** When State == session_established
+**      Data  == {state,<0.8015.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:27:44 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8013.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.8015.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 16049
+  neighbours:
+2017-10-14 18:27:44 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8013.12>},{id,7},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:28:53 =ERROR REPORT====
+** State machine <0.8064.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10865.12>,#Ref<0.0.7602179.218283>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"3sz9wepf1na27">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,991328,293050}}}
+** When State == session_established
+**      Data  == {state,<0.8066.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:28:53 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8064.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: [{'$gen_sync_all_state_event',{<0.15288.4>,#Ref<0.0.8650754.130435>},get_db_info}]
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.8066.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 15934
+  neighbours:
+2017-10-14 18:28:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8064.12>},{id,1},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:28:58 =ERROR REPORT====
+** State machine <0.8054.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10865.12>,#Ref<0.0.6029316.258223>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"35kfvg9vn1ii5">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,991333,298331}}}
+** When State == session_established
+**      Data  == {state,<0.8056.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:28:58 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8054.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: [{'$gen_sync_all_state_event',{<0.15288.4>,#Ref<0.0.8650754.130459>},get_db_info}]
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.8056.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 15939
+  neighbours:
+2017-10-14 18:28:58 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8054.12>},{id,4},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 18:29:03 =ERROR REPORT====
+** State machine <0.7981.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.10865.12>,#Ref<0.0.6029316.258256>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"3532f9hwmhbne">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,991338,303711}}}
+** When State == session_established
+**      Data  == {state,<0.7983.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 18:29:03 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.7981.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: [{'$gen_sync_all_state_event',{<0.15288.4>,#Ref<0.0.8650754.130500>},get_db_info}]
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.7983.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 21519
+  neighbours:
+2017-10-14 18:29:03 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.7981.12>},{id,5},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:47:43 =ERROR REPORT====
+** State machine <0.10740.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.13947.12>,#Ref<0.0.9961473.98580>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,999658,124793}}}
+** When State == session_established
+**      Data  == {state,<0.10742.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:47:43 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10740.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.10742.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 21359
+  neighbours:
+2017-10-14 20:47:43 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10740.12>},{id,8},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:47:56 =ERROR REPORT====
+** State machine <0.10866.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.13953.12>,#Ref<0.0.6291460.39896>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,999671,127195}}}
+** When State == session_established
+**      Data  == {state,<0.12468.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:47:56 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10866.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.12468.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 42639
+  neighbours:
+2017-10-14 20:47:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10866.12>},{id,7},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:48:36 =ERROR REPORT====
+** State machine <0.10901.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.13966.12>,#Ref<0.0.9961473.99082>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,999711,547605}}}
+** When State == session_established
+**      Data  == {state,<0.10903.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:48:36 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10901.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.10903.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 16552
+  neighbours:
+2017-10-14 20:48:36 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10901.12>},{id,5},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:50:54 =ERROR REPORT====
+** State machine <0.5245.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.509.0>,#Ref<0.0.9961473.100069>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1507,999849,725517}}}
+** When State == session_established
+**      Data  == {state,<0.11188.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:50:54 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.5245.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.11188.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 84855
+  neighbours:
+2017-10-14 20:50:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.5245.12>},{id,9},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:51:00 =ERROR REPORT====
+** State machine <0.10764.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.14018.12>,#Ref<0.0.9961473.100125>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"3sz9wepf1na27">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,999855,580161}}}
+** When State == session_established
+**      Data  == {state,<0.10766.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:51:00 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10764.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.10766.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 19025
+  neighbours:
+2017-10-14 20:51:00 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10764.12>},{id,3},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:51:05 =ERROR REPORT====
+** State machine <0.10889.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.14018.12>,#Ref<0.0.9961473.100173>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"35kfvg9vn1ii5">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,999860,594280}}}
+** When State == session_established
+**      Data  == {state,<0.10891.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:51:05 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10889.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.10891.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 19197
+  neighbours:
+2017-10-14 20:51:05 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10889.12>},{id,1},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:51:10 =ERROR REPORT====
+** State machine <0.10895.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.14018.12>,#Ref<0.0.9961473.100217>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"3532f9hwmhbne">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,999865,597717}}}
+** When State == session_established
+**      Data  == {state,<0.10897.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:51:10 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10895.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.10897.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 19002
+  neighbours:
+2017-10-14 20:51:10 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10895.12>},{id,4},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:51:15 =ERROR REPORT====
+** State machine <0.10750.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.14018.12>,#Ref<0.0.8650754.201698>},{sql_cmd,{sql_query,["SELECT id FROM muc_light_rooms WHERE luser = '",<<"281eacfa2o23h">>,"' AND lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,999870,603498}}}
+** When State == session_established
+**      Data  == {state,<0.10752.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:51:15 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10750.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.10752.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 19096
+  neighbours:
+2017-10-14 20:51:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10750.12>},{id,10},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 20:51:20 =ERROR REPORT====
+** State machine <0.10786.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.14018.12>,#Ref<0.0.8650754.201725>},{sql_cmd,{sql_query,["SELECT version, o.luser, o.lserver, aff FROM muc_light_rooms AS r LEFT OUTER JOIN muc_light_occupants AS o ON r.id = o.room_id WHERE r.luser = '",<<"1jrdsx3vu211m">>,"' AND r.lserver = '",<<"muclight.chat.devinprocess.com">>,"'"]},{1507,999875,611345}}}
+** When State == session_established
+**      Data  == {state,<0.12493.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 20:51:20 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.10786.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.12493.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 42243
+  neighbours:
+2017-10-14 20:51:20 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.10786.12>},{id,6},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 22:07:55 =ERROR REPORT====
+** State machine <0.8050.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.15529.12>,#Ref<0.0.9961473.152368>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971509990999">>,<<"';">>]},{1508,4470,362841}}}
+** When State == session_established
+**      Data  == {state,<0.14349.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 22:07:55 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.8050.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.14349.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 64320
+  neighbours:
+2017-10-14 22:07:55 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.8050.12>},{id,2},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 22:09:01 =ERROR REPORT====
+** State machine <0.14031.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.15556.12>,#Ref<0.0.6291460.66840>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971509990999">>,<<"';">>]},{1508,4536,275329}}}
+** When State == session_established
+**      Data  == {state,<0.14033.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 22:09:01 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.14031.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.14033.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 11700
+  neighbours:
+2017-10-14 22:09:01 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.14031.12>},{id,4},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 22:11:07 =ERROR REPORT====
+** State machine <0.14019.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.777.0>,#Ref<0.0.7864323.55923>},{sql_cmd,{sql_query,[<<"select vcard from vcard where username='">>,<<"971509990999">>,<<"' and server='">>,<<"chat.devinprocess.com">>,"';"]},{1508,4662,9595}}}
+** When State == session_established
+**      Data  == {state,<0.14021.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 22:11:07 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.14019.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: [{'$gen_sync_event',{<0.15582.12>,#Ref<0.0.8650754.245181>},{sql_cmd,{sql_transaction,#Fun<odbc_queries.8.113454062>},{1508,4662,13438}}},{'$gen_sync_all_state_event',{<0.15288.4>,#Ref<0.0.9961473.153934>},get_db_info}]
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.14021.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 9903
+  neighbours:
+2017-10-14 22:11:07 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.14019.12>},{id,9},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 22:13:12 =ERROR REPORT====
+** State machine <0.13954.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.777.0>,#Ref<0.0.7864323.56317>},{sql_cmd,{sql_query,[<<"select vcard from vcard where username='">>,<<"971509990999">>,<<"' and server='">>,<<"chat.devinprocess.com">>,"';"]},{1508,4787,677841}}}
+** When State == session_established
+**      Data  == {state,<0.13956.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 22:13:12 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13954.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13956.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 11880
+  neighbours:
+2017-10-14 22:13:12 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13954.12>},{id,7},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 22:14:13 =ERROR REPORT====
+** State machine <0.13948.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.15682.12>,#Ref<0.0.9961473.155982>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971509990999">>,<<"';">>]},{1508,4848,755019}}}
+** When State == session_established
+**      Data  == {state,<0.13950.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 22:14:13 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.13948.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.13950.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 34891
+  neighbours:
+2017-10-14 22:14:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.13948.12>},{id,8},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+
+2017-10-14 22:57:38 =ERROR REPORT====
+** State machine <0.14035.12> terminating 
+** Last message in was {'$gen_sync_event',{<0.16585.12>,#Ref<0.0.9961473.177136>},{sql_cmd,{sql_query,[<<"select password, pass_details from users where username='">>,<<"971566467375">>,<<"';">>]},{1508,7453,559275}}}
+** When State == session_established
+**      Data  == {state,<0.14037.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}
+** Reason for termination = 
+** timeout
+2017-10-14 22:57:38 =CRASH REPORT====
+  crasher:
+    initial call: ejabberd_odbc:init/1
+    pid: <0.14035.12>
+    registered_name: []
+    exception exit: {timeout,[{p1_fsm,terminate,8,[{file,"src/p1_fsm.erl"},{line,760}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['ejabberd_odbc_sup_chat.devinprocess.com',ejabberd_sup,<0.244.0>]
+    messages: []
+    links: [<0.448.0>]
+    dictionary: [{'$internal_queue_len',0},{mim_process_type,odbc_worker},{ejabberd_odbc_state,{state,<0.14037.12>,mysql,30000,<<"chat.devinprocess.com">>,<0.448.0>,false,undefined,{0,{[],[]}}}},{mim_host,<<"chat.devinprocess.com">>},{mim_odbc_dedicated,false},{ejabberd_odbc_nesting_level,0}]
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 15530
+  neighbours:
+2017-10-14 22:57:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'ejabberd_odbc_sup_chat.devinprocess.com'}
+     Context:    child_terminated
+     Reason:     timeout
+     Offender:   [{pid,<0.14035.12>},{id,10},{mfargs,{ejabberd_odbc,start_link,[<<"chat.devinprocess.com">>,30000,false]}},{restart_type,transient},{shutdown,2000},{child_type,worker}]
+

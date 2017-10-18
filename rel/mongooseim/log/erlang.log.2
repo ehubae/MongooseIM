@@ -1,0 +1,589 @@
+
+=====
+===== LOGGING STARTED Wed Oct 18 15:57:35 +04 2017
+=====
+2017-10-18 15:57:35.284 [debug] <0.6428.24>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+["INSERT ","IGNORE ","INTO ","mam_message"," (id, user_id, remote_bare_jid, remote_resource, direction, from_jid, message) VALUES ",[["('","386131930824000257","'",[[", '","7","'"],[", '",<<"971505271594">>,"'"],[", '",<<>>,"'"],[", '","O","'"],[", '",<<"/phone">>,"'"],[", '",<<131,80,92,48,92,48,15,149,120,156,205,87,89,206,227,200,145,174,182,171,199,118,205,226,110,204,5,6,126,51,132,191,72,74,36,69,22,48,192,36,23,145,18,69,82,164,184,72,124,41,112,223,247,85,60,133,1,31,192,199,240,181,124,132,33,127,85,181,171,92,110,238,193,160,231,101,82,92,98,229,18,75,70,124,145,153,204,140,222,122,111,190,159,242,204,207,242,55,111,222,252,38,247,219,214,14,253,108,105,255,58,250,213,58,244,182,123,84,254,107,195,141,236,238,57,246,171,216,91,171,247,92,98,74,160,240,30,223,190,108,17,220,121,65,109,132,120,177,113,12,121,113,136,61,65,110,49,31,197,136,61,130,15,48,254,62,169,252,240,147,110,87,174,213,31,200,61,130,193,216,118,249,39,39,209,255,90,77,191,247,252,33,46,170,166,116,23,31,222,187,101,158,172,94,188,141,190,114,240,173,83,122,143,36,249,122,240,187,105,149,252,238,105,127,29,46,218,181,245,175,137,237,56,126,243,97,250,16,196,153,159,60,99,250,74,241,251,46,234,115,39,39,249,164,237,189,249,237,194,113,61,187,179,87,230,63,57,118,235,227,232,55,115,253,186,111,178,159,81,248,83,212,117,85,251,1,130,214,104,236,182,245,187,246,189,31,245,206,123,219,135,32,189,245,27,209,247,98,27,2,175,28,92,98,15,48,207,195,113,252,197,71,145,5,59,92,34,240,95,92,98,156,244,95,92,92,4,197,23,88,92,116,196,193,93,232,80,102,158,223,64,156,223,253,175,161,126,33,247,4,134,188,2,254,141,235,111,243,56,247,127,198,247,119,127,251,203,159,255,250,31,199,124,201,253,183,232,254,62,138,170,242,99,222,134,31,43,187,177,243,118,53,240,195,19,235,127,255,180,92,92,62,122,126,235,54,113,213,197,101,177,142,191,121,178,255,237,51,187,245,139,37,140,191,167,29,39,39,73,2,70,225,127,156,246,167,238,111,215,156,73,118,238,255,226,133,246,195,231,217,179,184,72,63,46,105,251,194,179,127,249,204,251,188,184,191,67,158,140,127,206,215,28,125,28,99,175,139,94,49,67,182,4,252,100,253,216,149,157,157,125,124,92,110,184,101,95,116,175,138,187,39,39,247,221,146,223,193,111,62,207,243,255,110,45,124,202,136,221,123,113,249,209,235,27,251,155,92,92,189,115,179,190,237,150,92,48,158,91,251,143,59,124,239,236,109,12,125,217,219,62,185,184,180,120,67,6,123,226,5,135,225,189,183,35,247,62,186,221,193,176,239,18,223,2,234,79,221,23,102,127,74,66,227,187,126,60,124,185,92,98,254,199,189,255,147,213,21,236,200,143,195,168,123,166,3,222,127,154,241,119,175,123,183,176,227,21,239,119,48,68,38,16,92,110,128,114,77,173,147,26,2,92,110,40,92,48,92,92,1,117,4,128,129,80,133,18,213,91,84,89,33,92,48,154,14,3,97,169,1,88,254,66,246,92,110,128,184,118,40,92,48,88,92,48,142,94,5,86,197,215,62,92,48,167,87,185,165,212,128,254,114,220,23,92,48,243,101,223,122,109,50,208,94,1,168,206,69,131,199,145,179,205,145,227,145,17,251,197,58,170,164,153,68,61,229,215,242,236,211,250,179,71,49,58,127,159,173,100,164,31,148,156,3,218,74,218,92,114,123,218,64,196,226,145,18,46,182,41,20,140,108,188,56,167,2,69,84,65,92,48,177,128,90,152,128,61,92,48,133,165,94,233,239,133,2,161,200,82,202,157,167,65,42,208,208,92,34,123,214,151,137,143,20,24,69,154,2,226,129,82,20,118,149,11,20,150,6,35,96,89,69,191,30,181,3,69,69,146,122,87,220,216,85,149,71,104,113,17,77,75,116,235,178,134,222,241,227,137,145,98,183,60,158,232,232,126,227,168,212,62,93,239,133,64,167,181,196,232,91,105,14,49,57,149,88,85,183,248,43,155,92,116,58,162,26,70,230,221,77,163,74,44,206,200,173,109,84,217,133,4,123,55,107,231,243,25,30,162,215,67,84,250,199,248,94,95,83,236,106,100,149,127,207,173,58,46,241,107,86,213,126,89,219,245,163,221,95,145,174,241,209,222,105,232,145,208,14,83,27,28,31,110,115,133,73,205,64,186,224,190,245,154,92,98,237,47,41,230,59,5,46,23,53,17,156,103,242,114,219,146,80,130,109,134,87,124,22,76,68,234,39,39,124,94,67,254,89,124,212,87,124,194,69,104,84,248,39,39,62,44,237,141,175,178,42,5,244,72,84,238,87,197,96,249,251,141,213,142,137,64,209,148,74,167,...>>,...]],...],...]]
+2017-10-18 15:57:35.294 [debug] <0.6421.24>@mod_mam_odbc_async_pool_writer:run_flush:319 Flushed 1 entries.
+2017-10-18 15:57:35.296 [debug] <0.6422.24>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+["INSERT ","IGNORE ","INTO ","mam_message"," (id, user_id, remote_bare_jid, remote_resource, direction, from_jid, message) VALUES ",[["('","386131930826999553","'",[[", '","60","'"],[", '",<<"971506998040">>,"'"],[", '",<<"phone">>,"'"],[", '","I","'"],[", '",<<"971506998040/phone">>,"'"],[", '",<<131,80,92,48,92,48,15,149,120,156,205,87,89,206,227,200,145,174,182,171,199,118,205,226,110,204,5,6,126,51,132,191,72,74,36,69,22,48,192,36,23,145,18,69,82,164,184,72,124,41,112,223,247,85,60,133,1,31,192,199,240,181,124,132,33,127,85,181,171,92,110,238,193,160,231,101,82,92,98,229,18,75,70,124,145,153,204,140,222,122,111,190,159,242,204,207,242,55,111,222,252,38,247,219,214,14,253,108,105,255,58,250,213,58,244,182,123,84,254,107,195,141,236,238,57,246,171,216,91,171,247,92,98,74,160,240,30,223,190,108,17,220,121,65,109,132,120,177,113,12,121,113,136,61,65,110,49,31,197,136,61,130,15,48,254,62,169,252,240,147,110,87,174,213,31,200,61,130,193,216,118,249,39,39,209,255,90,77,191,247,252,33,46,170,166,116,23,31,222,187,101,158,172,94,188,141,190,114,240,173,83,122,143,36,249,122,240,187,105,149,252,238,105,127,29,46,218,181,245,175,137,237,56,126,243,97,250,16,196,153,159,60,99,250,74,241,251,46,234,115,39,39,249,164,237,189,249,237,194,113,61,187,179,87,230,63,57,118,235,227,232,55,115,253,186,111,178,159,81,248,83,212,117,85,251,1,130,214,104,236,182,245,187,246,189,31,245,206,123,219,135,32,189,245,27,209,247,98,27,2,175,28,92,98,15,48,207,195,113,252,197,71,145,5,59,92,34,240,95,92,98,156,244,95,92,92,4,197,23,88,92,116,196,193,93,232,80,102,158,223,64,156,223,253,175,161,126,33,247,4,134,188,2,254,141,235,111,243,56,247,127,198,247,119,127,251,203,159,255,250,31,199,124,201,253,183,232,254,62,138,170,242,99,222,134,31,43,187,177,243,118,53,240,195,19,235,127,255,180,92,92,62,122,126,235,54,113,213,197,101,177,142,191,121,178,255,237,51,187,245,139,37,140,191,167,29,39,39,73,2,70,225,127,156,246,167,238,111,215,156,73,118,238,255,226,133,246,195,231,217,179,184,72,63,46,105,251,194,179,127,249,204,251,188,184,191,67,158,140,127,206,215,28,125,28,99,175,139,94,49,67,182,4,252,100,253,216,149,157,157,125,124,92,110,184,101,95,116,175,138,187,39,39,247,221,146,223,193,111,62,207,243,255,110,45,124,202,136,221,123,113,249,209,235,27,251,155,92,92,189,115,179,190,237,150,92,48,158,91,251,143,59,124,239,236,109,12,125,217,219,62,185,184,180,120,67,6,123,226,5,135,225,189,183,35,247,62,186,221,193,176,239,18,223,2,234,79,221,23,102,127,74,66,227,187,126,60,124,185,92,98,254,199,189,255,147,213,21,236,200,143,195,168,123,166,3,222,127,154,241,119,175,123,183,176,227,21,239,119,48,68,38,16,92,110,128,114,77,173,147,26,2,92,110,40,92,48,92,92,1,117,4,128,129,80,133,18,213,91,84,89,33,92,48,154,14,3,97,169,1,88,254,66,246,92,110,128,184,118,40,92,48,88,92,48,142,94,5,86,197,215,62,92,48,167,87,185,165,212,128,254,114,220,23,92,48,243,101,223,122,109,50,208,94,1,168,206,69,131,199,145,179,205,145,227,145,17,251,197,58,170,164,153,68,61,229,215,242,236,211,250,179,71,49,58,127,159,173,100,164,31,148,156,3,218,74,218,92,114,123,218,64,196,226,145,18,46,182,41,20,140,108,188,56,167,2,69,84,65,92,48,177,128,90,152,128,61,92,48,133,165,94,233,239,133,2,161,200,82,202,157,167,65,42,208,208,92,34,123,214,151,137,143,20,24,69,154,2,226,129,82,20,118,149,11,20,150,6,35,96,89,69,191,30,181,3,69,69,146,122,87,220,216,85,149,71,104,113,17,77,75,116,235,178,134,222,241,227,137,145,98,183,60,158,232,232,126,227,168,212,62,93,239,133,64,167,181,196,232,91,105,14,49,57,149,88,85,183,248,43,155,92,116,58,162,26,70,230,221,77,163,74,44,206,200,173,109,84,217,133,4,123,55,107,231,243,25,30,162,215,67,84,250,199,248,94,95,83,236,106,100,149,127,207,173,58,46,241,107,86,213,126,89,219,245,163,221,95,145,174,241,209,222,105,232,145,208,14,83,27,28,31,110,115,133,73,205,64,186,224,190,245,154,92,98,237,47,41,230,59,5,46,23,53,17,156,103,242,114,219,146,80,130,109,134,87,124,22,76,68,234,39,39,124,94,67,254,89,124,212,87,124,194,69,104,84,248,39,39,62,44,237,141,175,178,42,5,244,72,84,238,87,197,96,249,251,141,213,142,137,...>>,...]],...],...]]
+2017-10-18 15:57:36.001 [debug] <0.8075.24>@ejabberd_receiver:process_data:325 Received XML on stream = "Vwyra4/KgBmz0uh/n8ahMEcmD5oLE45qaIGKMxyW+4FqVOV2NbZ280AVzawjP75OPas/d7CtMzpFGsc1vj600XNjzmAe1AGZnJq1b/AOtFPigS6mYx5Rfz5qf7KYJQwYMPyNAE9LRk0oPPNMBtLUm5PQ0hZMcA5oAjoqcAEZAP50u0eh/OgCvRUrrgZxgVHQB//9XCS4liz5ZK564qT7bcZ3bzkjH+eKqUUAWTeXDDBc0v225zu3nOMVVooAstd3Dfecn8qr5pKKANC3vhAgQJnHfP/wBakkvvMcPsxjtn/wCtVCigC/8Abv8AY/X/AOtR9u/2P1/+tVCigC/9u/2P1/8ArUfbv9j9f/rVQooA0V1Ar0T9f/rUv9pN/cH5/wD1qzaKANE6iWGCg/P/AOtTft3+x+v/ANaqFFAH/9k=" media_size="1" message_id="14840762-216b-4a18-a651-b878925e458716v06.jpeg"/></message><message type="reciept" id="14840762-216b-4a18-a651-b878925e458716v06.jpeg" to="971506998040@chat.devinprocess.com"><displayed xmlns="urn:xmpp:chat-markers:0" id="14840762-216b-4a18-a651-b878925e458716v06.jpeg"/><hhpo_msg_params/></message>"
+2017-10-18 15:57:36.001 [debug] <0.8075.24>@shaper:update:71 State: {maxrate,1000,999.9304205909121,1508327856000476}, Size=754
+M=753.9475407756296, I=0.847
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"message">>,[{<<"type">>,<<"chat">>},{<<"to">>,<<"971506998040@chat.devinprocess.com/phone">>}],[{xmlel,<<"received">>,[{<<"xmlns">>,<<"urn:xmpp:receipts">>},{<<"id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>}],[]},{xmlel,<<"hhpo_msg_params">>,[{<<"xmlns">>,<<"jabber:client">>},{<<"message_description">>,<<>>},{<<"message_sender">>,<<"971506998040@chat.devinprocess.com">>},{<<"fileName">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>},{<<"message_link_url">>,<<>>},{<<"message_type">>,<<"1">>},{<<"media_width">>,<<"1280">>},{<<"total_media_count">>,<<"3">>},{<<"server_url">>,<<"https://chatassets.ehub.ae//UserMedia/Assets/6f5dd666-e41b-48fe-869e-c14648481b6c/Folder/Get14840762-216b-4a18-a651-b878925e458716v06-97851.jpeg">>},{<<"audio_duration">>,<<>>},{<<"cluster_id">>,<<"367b7a54-7ae9-489e-9f78-6007d397e42300ec8">>},{<<"message_text">>,<<>>},{<<"message_receiver">>,<<"971505271594@chat.devinprocess.com">>},{<<"media_height">>,<<"1078">>},{<<"thumbnail">>,<<"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">>},{<<"media_size">>,<<"1">>},{<<"message_id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>}],[]}]}
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:36.002 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>}
+    packet {xmlel,<<"message">>,[{<<"type">>,<<"chat">>},{<<"to">>,<<"971506998040@chat.devinprocess.com/phone">>}],[{xmlel,<<"received">>,[{<<"xmlns">>,<<"urn:xmpp:receipts">>},{<<"id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>}],[]},{xmlel,<<"hhpo_msg_params">>,[{<<"xmlns">>,<<"jabber:client">>},{<<"message_description">>,<<>>},{<<"message_sender">>,<<"971506998040@chat.devinprocess.com">>},{<<"fileName">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>},{<<"message_link_url">>,<<>>},{<<"message_type">>,<<"1">>},{<<"media_width">>,<<"1280">>},{<<"total_media_count">>,<<"3">>},{<<"server_url">>,<<"https://chatassets.ehub.ae//UserMedia/Assets/6f5dd666-e41b-48fe-869e-c14648481b6c/Folder/Get14840762-216b-4a18-a651-b878925e458716v06-97851.jpeg">>},{<<"audio_duration">>,<<>>},{<<"cluster_id">>,<<"367b7a54-7ae9-489e-9f78-6007d397e42300ec8">>},{<<"message_text">>,<<>>},{<<"message_receiver">>,<<"971505271594@chat.devinprocess.com">>},{<<"media_height">>,<<"1078">>},{<<"thumbnail">>,<<"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">>},{<<"media_size">>,<<"1">>},{<<"message_id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>}],[]}]}.
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"message">>,[{<<"type">>,<<"chat">>},{<<"to">>,<<...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"message">>,[{<<"type">>,<<"chat">>},{<<"to">>,<<...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_sm:do_route:576 sending to process <0.8320.24>
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"message">>,[{<<"type">>,<<"reciept">>},{<<"id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>},{<<"to">>,<<"971506998040@chat.devinprocess.com">>}],[{xmlel,<<"displayed">>,[{<<"xmlns">>,<<"urn:xmpp:chat-markers:0">>},{<<"id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>}],[]},{xmlel,<<"hhpo_msg_params">>,[],[]}]}
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:36.003 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"message">>,[{<<"type">>,<<"reciept">>},{<<"id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>},{<<"to">>,<<"971506998040@chat.devinprocess.com">>}],[{xmlel,<<"displayed">>,[{<<"xmlns">>,<<"urn:xmpp:chat-markers:0">>},{<<"id">>,<<"14840762-216b-4a18-a651-b878925e458716v06.jpeg">>}],[]},{xmlel,<<"hhpo_msg_params">>,[],[]}]}.
+2017-10-18 15:57:36.004 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"message">>,[{<<"type">>,<<"reci"...>>},{<<"id">>,<<...>>},{<<...>>,...}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:36.004 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"message">>,[{<<"type">>,<<"reci"...>>},{<<"id">>,<<...>>},{<<...>>,...}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:36.004 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:36.004 [debug] <0.8320.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<message from='971505271594@chat.devinprocess.com/phone' to='971506998040@chat.devinprocess.com/phone' type='chat'><received xmlns='urn:xmpp:receipts' id='14840762-216b-4a18-a651-b878925e458716v06.jpeg'/><hhpo_msg_params xmlns='jabber:client' message_description='' message_sender='971506998040@chat.devinprocess.com' fileName='14840762-216b-4a18-a651-b878925e458716v06.jpeg' message_link_url='' message_type='1' media_width='1280' total_media_count='3' server_url='https://chatassets.ehub.ae//UserMedia/Assets/6f5dd666-e41b-48fe-869e-c14648481b6c/Folder/Get14840762-216b-4a18-a651-b878925e458716v06-97851.jpeg' audio_duration='' cluster_id='367b7a54-7ae9-489e-9f78-6007d397e42300ec8' message_text='' message_receiver='971505271594@chat.devinprocess.com' media_height='1078' thumbnail='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' media_size='1' message_id='14840762-216b-4a18-a651-b878925e458716v06.jpeg'/></message>">>
+2017-10-18 15:57:36.004 [debug] <0.8320.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<message from='971505271594@chat.devinprocess.com/phone' to='971506998040@chat.devinprocess.com' type='reciept' id='14840762-216b-4a18-a651-b878925e458716v06.jpeg'><displayed xmlns='urn:xmpp:chat-markers:0' id='14840762-216b-4a18-a651-b878925e458716v06.jpeg'/><hhpo_msg_params/></message>">>
+2017-10-18 15:57:41.102 [info] <0.924.0>@ejabberd_listener:accept:322 (#Port<0.5141440>) Accepted connection {{10,2,4,77},28287} -> {{10,1,32,240},5222}
+2017-10-18 15:57:41.146 [debug] <0.580.0>@ejabberd_router:route:106 route
+        from {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+        to {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"iq">>,[{<<"id">>,<<"D8B304F7C099B345">>},{<<"type">>,<<"get">>}],[{xmlel,<<"ping">>,[{<<"xmlns">>,<<"urn:xmpp:ping">>}],[]}]}
+2017-10-18 15:57:41.146 [debug] <0.580.0>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:41.146 [debug] <0.580.0>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:41.146 [debug] <0.580.0>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:41.146 [debug] <0.580.0>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:41.146 [debug] <0.580.0>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:41.147 [debug] <0.580.0>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>} 
+    to {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>}
+    packet {xmlel,<<"iq">>,[{<<"id">>,<<"D8B304F7C099B345">>},{<<"type">>,<<"get">>}],[{xmlel,<<"ping">>,[{<<"xmlns">>,<<"urn:xmpp:ping">>}],[]}]}.
+2017-10-18 15:57:41.147 [debug] <0.580.0>@ejabberd_local:do_route:387 local route
+        from {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+        to {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"iq">>,[{<<"id">>,<<"D8B3"...>>},{<<"type">>,<<...>>}],[{xmlel,<<...>>,...}]}
+2017-10-18 15:57:41.147 [debug] <0.580.0>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+        to {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"iq">>,[{<<"id">>,<<"D8B3"...>>},{<<"type">>,<<...>>}],[{xmlel,<<...>>,...}]}
+2017-10-18 15:57:41.147 [debug] <0.580.0>@ejabberd_sm:do_route:576 sending to process <0.3157.24>
+2017-10-18 15:57:41.147 [debug] <0.580.0>@ejabberd_router:route:469 routing done 
+2017-10-18 15:57:41.148 [debug] <0.3157.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<iq from='chat.devinprocess.com' to='971567133781@chat.devinprocess.com/phone' id='D8B304F7C099B345' type='get'><ping xmlns='urn:xmpp:ping'/></iq>">>
+2017-10-18 15:57:41.148 [debug] <0.3157.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<r xmlns='urn:xmpp:sm:3'/>">>
+2017-10-18 15:57:41.214 [debug] <0.3156.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<iq type="result" from="971567133781@chat.devinprocess.com/phone" id="D8B304F7C099B345" to="chat.devinprocess.com"/>"
+2017-10-18 15:57:41.214 [debug] <0.3156.24>@shaper:update:71 State: {maxrate,1000,981.9373817449884,1508327836166710}, Size=116
+M=113.94191076264771, I=25047.884
+2017-10-18 15:57:41.215 [debug] <0.3157.24>@mod_mam:user_send_packet:280 Send packet
+    from {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"iq">>,[{<<"xml:lang">>,<<"en">>},{<<"type">>,<<"result">>},{<<"from">>,<<"971567133781@chat.devinprocess.com/phone">>},{<<"id">>,<<"D8B304F7C099B345">>},{<<"to">>,<<"chat.devinprocess.com">>}],[]}.
+2017-10-18 15:57:41.215 [debug] <0.3157.24>@ejabberd_router:route:106 route
+        from {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"iq">>,[{<<"xml:lang">>,<<"en">>},{<<"type">>,<<"result">>},{<<"from">>,<<"971567133781@chat.devinprocess.com/phone">>},{<<"id">>,<<"D8B304F7C099B345">>},{<<"to">>,<<"chat.devinprocess.com">>}],[]}
+2017-10-18 15:57:41.216 [debug] <0.3157.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:41.216 [debug] <0.3157.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:41.216 [debug] <0.3157.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:41.216 [debug] <0.3157.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:41.216 [debug] <0.3157.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:41.216 [debug] <0.3157.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"iq">>,[{<<"xml:lang">>,<<"en">>},{<<"type">>,<<"result">>},{<<"from">>,<<"971567133781@chat.devinprocess.com/phone">>},{<<"id">>,<<"D8B304F7C099B345">>},{<<"to">>,<<"chat.devinprocess.com">>}],[]}.
+2017-10-18 15:57:41.217 [debug] <0.3157.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971567133781">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<>>,<<"chat.devinprocess.com">>,<<>>,<<>>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"iq">>,[{<<"xml:lang">>,<<"en">>},{<<"type">>,<<...>>},{<<...>>,...},{...}|...],[]}
+2017-10-18 15:57:41.217 [debug] <0.3157.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:41.225 [debug] <0.3156.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<a h="932" xmlns="urn:xmpp:sm:3"/>"
+2017-10-18 15:57:41.225 [debug] <0.3156.24>@shaper:update:71 State: {maxrate,1000,493.2842557321846,1508327861214594}, Size=34
+M=22.565636636738148, I=10.687
+2017-10-18 15:57:45.122 [debug] <0.393.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.395.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.396.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.397.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.401.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.399.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.398.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.400.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.124 [debug] <0.402.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:45.126 [debug] <0.403.0>@shaper_srv:handle_info:145 Deleted old shapers
+2017-10-18 15:57:46.302 [info] <0.924.0>@ejabberd_listener:accept:322 (#Port<0.5141439>) Accepted connection {{10,2,4,77},16392} -> {{10,1,32,240},5222}
+2017-10-18 15:57:48.281 [debug] <0.8075.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<presence type="unavailable"><idle xmlns="urn:xmpp:idle:1" since="2017-10-18T15:59:21.894+0400"/><x xmlns="vcard-temp:x:update"><photo/></x></presence>"
+2017-10-18 15:57:48.283 [debug] <0.8075.24>@shaper:update:71 State: {maxrate,1000,999.404169448768,1508327856755323}, Size=151
+M=150.91008316196314, I=11527.536
+2017-10-18 15:57:48.285 [debug] <0.8076.24>@mod_mam:user_send_packet:280 Send packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.288 [debug] <0.8076.24>@ejabberd_c2s:process_outgoing_stanza:968 presence_update({jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>},
+        {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]},
+        {state,{socket_state,gen_tcp,#Port<0.5138229>,<0.8075.24>},ejabberd_socket,#Ref<0.0.13631490.192611>,false,<<"6E3783ED96E5163F">>,{sasl_state,<<"jabber">>,<<"chat.devinprocess.com">>,<<>>,cyrsasl_scram,{state,4,<<202,171,19,133,232,41,42,58,64,116,254,111,161,99,231,211,249,145,68,199>>,<<148,2,231,104,217,113,78,28,156,46,149,169,184,225,4,91,116,181,89,236>>,<<"971505271594">>,{mongoose_credentials,<<"chat.devinprocess.com">>,[],[]},<<"n=971505271594,r=8F8595B2-824B-49FB-8191-98545F059F0E,r=8F8595B2-824B-49FB-8191-98545F059F0EibTb+FVy/XK4GjbAkA60og==,s=LwF3g6guK+gIYFu1jZm4tA==,i=4096">>,<<"8F8595B2-824B-49FB-8191-98545F059F0E">>,<<"ibTb+FVy/XK4GjbAkA60og==">>,ejabberd_auth_odbc},{mongoose_credentials,<<"chat.devinprocess.com">>,[],[]}},c2s,c2s_shaper,{false,0},true,false,false,[verify_none,{certfile,"priv/ssl/fake_server.pem"},{protocol_options,["no_sslv3"]}],true,{jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>},<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,{{1508,327354,710551},<0.8076.24>},{9,{{<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>},{{<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil},{{<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}},{{<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil},{{<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}}}},{12,{{<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>},{{<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},{{<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}},{{<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil}},{{<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil},{{<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil}}}},{12,{{<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>},{{<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},{{<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}},{{<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},{{<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>},nil,{{<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>},nil,{{<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>},nil,{{<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>},nil,{{<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>},nil,{{<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}}}}}}}}},{0,nil},[],{xmlel,<<"presence">>,[],[{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]},undefined,{{2017,10,18},{11,49,14}},false,{userlist,none,[],false},c2s,<<"971505271594">>,{{10,2,4,77},10958},[],<<>>,false,0,undefined,0,[],0,100,1,600,undefined,undefined,active,[]})
+2017-10-18 15:57:48.288 [debug] <0.8076.24>@mod_carboncopy:disable:270 disabling for 971505271594@chat.devinprocess.com/phone
+2017-10-18 15:57:48.289 [debug] <0.31989.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"BEGIN;">>]
+2017-10-18 15:57:48.291 [debug] <0.31989.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"update ">>,<<"user_availability">>,<<" set ">>,[[<<"username">>,"='",<<"971505271594">>,"'"],[[", ",[<<"availability">>,"='","Offline","'"]]]],<<" where ">>,[<<"username='">>,<<"971505271594">>,"'"],";"]
+2017-10-18 15:57:48.294 [debug] <0.31989.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"commit;">>]
+2017-10-18 15:57:48.312 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.312 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.312 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.312 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.312 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.312 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.313 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.313 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.314 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.314 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.315 [debug] <0.8076.24>@ejabberd_sm:do_route:576 sending to process <0.7625.24>
+2017-10-18 15:57:48.315 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.315 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.315 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.316 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.315 [debug] <0.7625.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<presence from='971505271594@chat.devinprocess.com/phone' to='918075420295@chat.devinprocess.com/phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek' type='unavailable'><idle xmlns='urn:xmpp:idle:1' since='2017-10-18T15:59:21.894+0400'/><x xmlns='vcard-temp:x:update'><photo/></x></presence>">>
+2017-10-18 15:57:48.316 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.316 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.316 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.316 [debug] <0.7625.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<r xmlns='urn:xmpp:sm:3'/>">>
+2017-10-18 15:57:48.316 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.317 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.317 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.317 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.318 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.318 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.318 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.318 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.318 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.318 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.319 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.319 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.319 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.320 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.321 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.321 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.321 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>,<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.321 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.322 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.322 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.322 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.322 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.322 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.322 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.323 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.323 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.323 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.324 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971506998040">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.324 [debug] <0.8076.24>@ejabberd_sm:do_route:576 sending to process <0.8320.24>
+2017-10-18 15:57:48.324 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.324 [debug] <0.8320.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<presence from='971505271594@chat.devinprocess.com/phone' to='971506998040@chat.devinprocess.com/phone' type='unavailable'><idle xmlns='urn:xmpp:idle:1' since='2017-10-18T15:59:21.894+0400'/><x xmlns='vcard-temp:x:update'><photo/></x></presence>">>
+2017-10-18 15:57:48.324 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.324 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.324 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.325 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.325 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.325 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.325 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.325 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.326 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>,<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.326 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.326 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.326 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.326 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.326 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.327 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.327 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.329 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.329 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.329 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>,<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.329 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.335 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.336 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.336 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.336 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.336 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.336 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.337 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.337 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.338 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>,<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.338 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.339 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.339 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.339 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.339 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.339 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.339 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.340 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.340 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.341 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>,<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.341 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.342 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.342 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.342 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.342 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.342 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.342 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.343 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.344 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.344 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>,<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.344 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.345 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.345 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.345 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.345 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.345 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.345 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.346 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.347 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.347 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>,<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.347 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.348 [debug] <0.8076.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}
+2017-10-18 15:57:48.348 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:48.348 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.348 [debug] <0.8076.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:48.348 [debug] <0.8076.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:48.348 [debug] <0.8076.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:48.349 [debug] <0.8076.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"unavailable">>}],[{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T15:59:21.894+0400">>}],[]},{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:48.349 [debug] <0.8076.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.350 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>,<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.350 [debug] <0.8076.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971566467375">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971566467375">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"unav"...>>}],[{xmlel,<<...>>,...},{xmlel,...}]}
+2017-10-18 15:57:48.351 [debug] <0.8076.24>@ejabberd_sm:do_route:576 sending to process <0.138.24>
+2017-10-18 15:57:48.351 [debug] <0.8076.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:48.351 [debug] <0.8076.24>@ejabberd_c2s:session_established:911 Session established closed - trying to enter resume_session
+2017-10-18 15:57:48.351 [debug] <0.138.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<presence from='971505271594@chat.devinprocess.com/phone' to='971566467375@chat.devinprocess.com/phone' type='unavailable'><idle xmlns='urn:xmpp:idle:1' since='2017-10-18T15:59:21.894+0400'/><x xmlns='vcard-temp:x:update'><photo/></x></presence>">>
+2017-10-18 15:57:48.351 [info] <0.8076.24>@ejabberd_c2s:terminate:1457 ({socket_state,gen_tcp,#Port<0.5138229>,<0.8075.24>}) Close session for 971505271594@chat.devinprocess.com/phone
+2017-10-18 15:57:48.352 [debug] <0.138.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<r xmlns='urn:xmpp:sm:3'/>">>
+2017-10-18 15:57:48.352 [debug] <0.8076.24>@mod_pubsub:node_action:4018 node_action <<"pubsub.chat.devinprocess.com">> <<"flat">> get_entity_affiliations [<<"pubsub.chat.devinprocess.com">>,{<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}]
+2017-10-18 15:57:48.353 [debug] <0.8076.24>@mod_pubsub:node_call:3999 node_call <<"flat">> get_entity_affiliations [<<"pubsub.chat.devinprocess.com">>,{<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}]
+2017-10-18 15:57:48.353 [debug] <0.8076.24>@mod_pubsub:node_action:4018 node_action <<"pubsub.chat.devinprocess.com">> <<"pep">> get_entity_affiliations [<<"pubsub.chat.devinprocess.com">>,{<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}]
+2017-10-18 15:57:48.354 [debug] <0.8076.24>@mod_pubsub:node_call:3999 node_call <<"pep">> get_entity_affiliations [<<"pubsub.chat.devinprocess.com">>,{<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}]
+2017-10-18 15:57:48.354 [debug] <0.8076.24>@mod_pubsub:node_action:4018 node_action <<"pubsub.chat.devinprocess.com">> <<"hometree">> get_entity_affiliations [<<"pubsub.chat.devinprocess.com">>,{<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}]
+2017-10-18 15:57:48.354 [debug] <0.8076.24>@mod_pubsub:node_call:3999 node_call <<"hometree">> get_entity_affiliations [<<"pubsub.chat.devinprocess.com">>,{<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}]
+2017-10-18 15:57:48.355 [debug] <0.8076.24>@ejabberd_c2s:terminate:1491 rerouting unacked messages
+2017-10-18 15:57:48.359 [debug] <0.7624.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<a h="701" xmlns="urn:xmpp:sm:3"/>"
+2017-10-18 15:57:48.359 [debug] <0.7624.24>@shaper:update:71 State: {maxrate,1000,984.306532290897,1508327854927329}, Size=34
+M=33.47466640372022, I=13432.265
+2017-10-18 15:57:48.513 [debug] <0.137.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<a h="2252" xmlns="urn:xmpp:sm:3"/>"
+2017-10-18 15:57:48.513 [debug] <0.137.24>@shaper:update:71 State: {maxrate,1000,989.9222299204816,1508327844841071}, Size=35
+M=34.65079723241966, I=23672.678
+2017-10-18 15:57:48.588 [info] <0.924.0>@ejabberd_listener:accept:322 (#Port<0.5141499>) Accepted connection {{10,2,4,77},34467} -> {{10,1,32,240},5222}
+2017-10-18 15:57:48.592 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<?xml version='1.0'?>"
+2017-10-18 15:57:48.604 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' to='chat.devinprocess.com'>"
+2017-10-18 15:57:48.606 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='AD4BFBFCC798A0BB' from='chat.devinprocess.com' version='1.0' xml:lang='en'>">>
+2017-10-18 15:57:48.606 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<stream:features><starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>PLAIN</mechanism><mechanism>X-OAUTH</mechanism><mechanism>DIGEST-MD5</mechanism><mechanism>SCRAM-SHA-1</mechanism></mechanisms><register xmlns='http://jabber.org/features/iq-register'/><sm xmlns='urn:xmpp:sm:3'/></stream:features>">>
+2017-10-18 15:57:48.620 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="SCRAM-SHA-1">biwsbj05NzE1MDUyNzE1OTQscj05QzZGOTRENy1CODVELTQ4QzQtQjg0Ri0wNEFDMTZENjFERjk=</auth>"
+2017-10-18 15:57:48.620 [debug] <0.8373.24>@shaper:update:71 State: {maxrate,1000,0,1508327868605892}, Size=154
+M=77.0, I=14.514
+2017-10-18 15:57:48.622 [debug] <0.31993.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"select password, pass_details from users where username='">>,<<"971505271594">>,<<"';">>]
+2017-10-18 15:57:48.688 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<challenge xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>cj05QzZGOTRENy1CODVELTQ4QzQtQjg0Ri0wNEFDMTZENjFERjk3VnIvcVZkYWNuYmxLVmtQLzJWcjZBPT0scz1TeUZQd3RIR1F4MFVINy9LMUJFeGpnPT0saT00MDk2</challenge>">>
+2017-10-18 15:57:48.710 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Yz1iaXdzLHI9OUM2Rjk0RDctQjg1RC00OEM0LUI4NEYtMDRBQzE2RDYxREY5N1ZyL3FWZGFjbmJsS1ZrUC8yVnI2QT09LHA9VTRHejdYN2k5QTFZZzY4Z0FzdkgrbWMvWnpzPQ==</response>"
+2017-10-18 15:57:48.710 [debug] <0.8373.24>@shaper:update:71 State: {maxrate,1000,993.3689398044224,1508327868683406}, Size=198
+M=196.69569897985338, I=27.284
+2017-10-18 15:57:48.712 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>dj1aQjg3dGRRRVJGQ2ZWek5JS2Ivd3B3L2M0OHc9</success>">>
+2017-10-18 15:57:48.712 [info] <0.8374.24>@ejabberd_c2s:handle_sasl_success:3031 ({socket_state,gen_tcp,#Port<0.5141499>,<0.8373.24>}) Accepted authentication for 971505271594 by <<"971505271594">>
+2017-10-18 15:57:48.882 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' to='chat.devinprocess.com'>"
+2017-10-18 15:57:48.882 [debug] <0.8373.24>@shaper:update:71 State: {maxrate,1000,998.4991127521129,1508327868880690}, Size=126
+M=125.81117161687848, I=1.86
+2017-10-18 15:57:48.883 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='BD2BBEBD3FF32D8D' from='chat.devinprocess.com' version='1.0' xml:lang='en'>">>
+2017-10-18 15:57:48.883 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<stream:features><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/><register xmlns='http://jabber.org/features/iq-register'/><sm xmlns='urn:xmpp:sm:3'/></stream:features>">>
+2017-10-18 15:57:49.008 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<iq type="set" id="EBE3ABD2-55FE-472A-8A98-9F9256482165"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>phone</resource></bind></iq>"
+2017-10-18 15:57:49.008 [debug] <0.8373.24>@shaper:update:71 State: {maxrate,1000,0,1508327868883065}, Size=142
+M=71.0, I=125.627
+2017-10-18 15:57:49.009 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<iq id='EBE3ABD2-55FE-472A-8A98-9F9256482165' type='result'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>971505271594@chat.devinprocess.com/phone</jid></bind></iq>">>
+2017-10-18 15:57:49.021 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<iq type="set" id="3788491C-55EA-464A-AE7D-D6A050B0C03E"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>"
+2017-10-18 15:57:49.021 [debug] <0.8373.24>@shaper:update:71 State: {maxrate,1000,565.1651316993958,1508327869008692}, Size=116
+M=80.84554018218735, I=12.634
+2017-10-18 15:57:49.021 [info] <0.8374.24>@ejabberd_c2s:do_open_session:805 ({socket_state,gen_tcp,#Port<0.5141499>,<0.8373.24>}) Opened session for 971505271594@chat.devinprocess.com/phone
+2017-10-18 15:57:49.022 [debug] <0.8374.24>@ejabberd_c2s:send_text:1520 Send XML on stream = <<"<iq type='result' id='3788491C-55EA-464A-AE7D-D6A050B0C03E'><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></iq>">>
+2017-10-18 15:57:49.091 [debug] <0.8373.24>@ejabberd_receiver:process_data:325 Received XML on stream = "<presence><x xmlns="vcard-temp:x:update"><photo/></x></presence><iq type="get" id="BFDF9360-9192-46B1-AACB-A98440BF9530"><query xmlns="jabber:iq:roster"/></iq><iq type="get" to="971505271594@chat.devinprocess.com" id="D27F0912-065C-41F0-A875-6EFA5548CEE6"><vCard xmlns="vcard-temp"/></iq>"
+2017-10-18 15:57:49.091 [debug] <0.8373.24>@shaper:update:71 State: {maxrate,1000,0,1508327869022647}, Size=288
+M=144.0, I=69.198
+2017-10-18 15:57:49.092 [debug] <0.8374.24>@mod_mam:user_send_packet:280 Send packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[],[{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]}.
+2017-10-18 15:57:49.093 [debug] <0.8374.24>@ejabberd_c2s:process_outgoing_stanza:968 presence_update({jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>},
+        {xmlel,<<"presence">>,[],[{xmlel,<<"x">>,[{<<"xmlns">>,<<"vcard-temp:x:update">>}],[{xmlel,<<"photo">>,[],[]}]}]},
+        {state,{socket_state,gen_tcp,#Port<0.5141499>,<0.8373.24>},ejabberd_socket,#Ref<0.0.12058627.100720>,false,<<"BD2BBEBD3FF32D8D">>,{sasl_state,<<"jabber">>,<<"chat.devinprocess.com">>,<<>>,cyrsasl_scram,{state,4,<<34,114,15,140,202,244,160,214,223,121,17,252,235,214,30,68,125,105,187,90>>,<<208,231,143,70,168,75,201,157,77,224,219,214,37,141,123,36,169,188,47,24>>,<<"971505271594">>,{mongoose_credentials,<<"chat.devinprocess.com">>,[],[]},<<"n=971505271594,r=9C6F94D7-B85D-48C4-B84F-04AC16D61DF9,r=9C6F94D7-B85D-48C4-B84F-04AC16D61DF97Vr/qVdacnblKVkP/2Vr6A==,s=SyFPwtHGQx0UH7/K1BExjg==,i=4096">>,<<"9C6F94D7-B85D-48C4-B84F-04AC16D61DF9">>,<<"7Vr/qVdacnblKVkP/2Vr6A==">>,ejabberd_auth_odbc},{mongoose_credentials,<<"chat.devinprocess.com">>,[],[]}},c2s,c2s_shaper,{false,0},true,false,false,[verify_none,{certfile,"priv/ssl/fake_server.pem"},{protocol_options,["no_sslv3"]}],true,{jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>},<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,{{1508,327869,23687},<0.8374.24>},{9,{{<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>},{{<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil},{{<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}},{{<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil},{{<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}}}},{12,{{<<"971551727378">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971506666666">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>},{{<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},{{<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>},nil,nil}},{{<<"971509524375">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971506998040">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil}},{{<<"971556809906">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971555167780">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971554074584">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil},{{<<"971566467375">>,<<"chat.devinprocess.com">>,<<>>},{{<<"971561770101">>,<<"chat.devinprocess.com">>,<<>>},nil,nil},nil}}}},{0,nil},{0,nil},[],undefined,undefined,undefined,false,{userlist,none,[],false},c2s,<<"971505271594">>,{{10,2,4,77},34467},[],<<>>,false,0,undefined,0,[],0,100,1,600,undefined,undefined,active,[]})
+2017-10-18 15:57:49.094 [debug] <0.8374.24>@ejabberd_c2s:presence_update:1832 from unavail = true
+2017-10-18 15:57:49.094 [debug] <0.5361.24>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"BEGIN;">>]
+2017-10-18 15:57:49.096 [debug] <0.5361.24>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"update ">>,<<"user_availability">>,<<" set ">>,[[<<"username">>,"='",<<"971505271594">>,"'"],[[", ",[<<"availability">>,"='","Available","'"]]]],<<" where ">>,[<<"username='">>,<<"971505271594">>,"'"],";"]
+2017-10-18 15:57:49.098 [debug] <0.5361.24>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"commit;">>]
+2017-10-18 15:57:49.104 [debug] <0.8374.24>@ejabberd_c2s:resend_offline_messages:2199 resend offline messages
+2017-10-18 15:57:49.104 [debug] <0.31977.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"BEGIN;">>]
+2017-10-18 15:57:49.108 [debug] <0.31977.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"select timestamp, from_jid, packet from offline_message where server = '">>,<<"chat.devinprocess.com">>,<<"' and username = '">>,<<"971505271594">>,<<"' and (expire is null or expire > ">>,"1508327869104672",<<") ORDER BY timestamp">>]
+2017-10-18 15:57:49.110 [debug] <0.31977.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"delete from offline_message where server = '">>,<<"chat.devinprocess.com">>,<<"' and username = '">>,<<"971505271594">>,<<"'">>]
+2017-10-18 15:57:49.111 [debug] <0.31977.23>@ejabberd_odbc:sql_query_internal:599 MySQL, Send query
+[<<"commit;">>]
+2017-10-18 15:57:49.112 [debug] <0.8374.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"probe">>}],[]}
+2017-10-18 15:57:49.112 [debug] <0.8374.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:49.112 [debug] <0.8374.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.112 [debug] <0.8374.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:49.112 [debug] <0.8374.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:49.112 [debug] <0.8374.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.113 [debug] <0.8374.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"probe">>}],[]}.
+2017-10-18 15:57:49.113 [debug] <0.8374.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.113 [debug] <0.8374.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_sm:do_route:576 sending to process <0.7625.24>
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"probe">>}],[]}
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:49.114 [debug] <0.8374.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.115 [debug] <0.8374.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"probe">>}],[]}.
+2017-10-18 15:57:49.115 [debug] <0.7625.24>@ejabberd_router:route:106 route
+        from {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"presence">>,[{<<"xml:lang">>,<<"en">>},{<<"from">>,<<"918075420295@chat.devinprocess.com/phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}],[{xmlel,<<"c">>,[{<<"xmlns">>,<<"http://jabber.org/protocol/caps">>},{<<"ver">>,<<"ZG5WzDfoE4BByn/D4L1Pt3kyGJE=">>},{<<"node">>,<<"http://conversations.im">>},{<<"hash">>,<<"sha-1">>}],[]},{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T08:07:39.794Z">>}],[]},{xmlel,<<"delay">>,[{<<"xmlns">>,<<"urn:xmpp:delay">>},{<<"from">>,<<"918075420295@chat.devinprocess.com/phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>},{<<"stamp">>,<<"2017-10-18T09:28:23Z">>}],[{xmlcdata,<<>>}]}]}
+2017-10-18 15:57:49.115 [debug] <0.7625.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:49.115 [debug] <0.8374.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.115 [debug] <0.7625.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.115 [debug] <0.7625.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:49.115 [debug] <0.7625.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:49.115 [debug] <0.7625.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.115 [debug] <0.8374.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>,<<"971502567356">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.115 [debug] <0.8374.24>@ejabberd_router:route:469 routing done
+2017-10-18 15:57:49.115 [debug] <0.8374.24>@ejabberd_router:route:106 route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"probe">>}],[]}
+2017-10-18 15:57:49.115 [debug] <0.8374.24>@ejabberd_router:route:446 Using module mongoose_router_global
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@ejabberd_router:route:472 routing skipped
+2017-10-18 15:57:49.116 [debug] <0.7625.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>} 
+    to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+    packet {xmlel,<<"presence">>,[{<<"xml:lang">>,<<"en">>},{<<"from">>,<<"918075420295@chat.devinprocess.com/phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}],[{xmlel,<<"c">>,[{<<"xmlns">>,<<"http://jabber.org/protocol/caps">>},{<<"ver">>,<<"ZG5WzDfoE4BByn/D4L1Pt3kyGJE=">>},{<<"node">>,<<"http://conversations.im">>},{<<"hash">>,<<"sha-1">>}],[]},{xmlel,<<"idle">>,[{<<"xmlns">>,<<"urn:xmpp:idle:1">>},{<<"since">>,<<"2017-10-18T08:07:39.794Z">>}],[]},{xmlel,<<"delay">>,[{<<"xmlns">>,<<"urn:xmpp:delay">>},{<<"from">>,<<"918075420295@chat.devinprocess.com/phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>},{<<"stamp">>,<<"2017-10-18T09:28:23Z">>}],[{xmlcdata,<<>>}]}]}.
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@ejabberd_router:route:446 Using module mongoose_router_localdomain
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@ejabberd_router:route:459 filter passed
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@mod_mam:filter_packet:300 Receive packet
+    from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>} 
+    to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+    packet {xmlel,<<"presence">>,[{<<"type">>,<<"probe">>}],[]}.
+2017-10-18 15:57:49.116 [debug] <0.7625.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"presence">>,[{<<"xml:lang">>,<<"en">>},{<<"from">>,<<...>>}],[{xmlel,<<...>>,...},{xmlel,...},{...}]}
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@ejabberd_local:do_route:387 local route
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.116 [debug] <0.8374.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<>>}
+        packet {xmlel,<<"presence">>,[{<<"type">>,<<"prob"...>>}],[]}
+2017-10-18 15:57:49.116 [debug] <0.7625.24>@ejabberd_sm:do_route:560 session manager
+        from {jid,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>,<<"918075420295">>,<<"chat.devinprocess.com">>,<<"phone.M0FRISDme0m87Umw9MXjTxBkJvpx1FjA0laSwo5d6q71HvD3xiQ7CNDZpsC/KA+3Zek">>}
+        to {jid,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>,<<"971505271594">>,<<"chat.devinprocess.com">>,<<"phone">>}
+        packet {xmlel,<<"presence">>,[{<<"xml:lang">>,<<"en">>},{<<"from">>,<<...>>}],[{xmlel,<<...>>,...},{xmlel,...},{...}]}
+2017-10-18 15:57:49.117 [debug] <0.7625.24>@ejabberd_sm:do_route:576 sending to process <0.8374.24>
+2017-10-18 15:57:49.117 [debug] <0.8374.24>@ejabberd_sm:do_route:560 session manager

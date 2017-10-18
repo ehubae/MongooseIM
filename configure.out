@@ -1,0 +1,5 @@
+export MONGOOSEIM_CONFIGURED="yes"
+export APPS="p1_mysql odbc p1_pgsql redo riakc riak_pb protobuffs"
+export PREFIX="/usr/local"
+export RELTOOL_VARS="rel/configure.vars.config"
+export SYSTEM="no"

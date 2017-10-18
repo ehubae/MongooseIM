@@ -1,0 +1,7 @@
+{application,usec,
+             [{description,"Convert anything to microseconds and back."},
+              {vsn,"0.1"},
+              {modules,[usec]},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {env,[]}]}.

@@ -1,0 +1,7 @@
+{application,bear,
+             [{description,[]},
+              {vsn,"0.8.2"},
+              {registered,[]},
+              {applications,[]},
+              {env,[]},
+              {modules,[bear]}]}.

@@ -1,0 +1,12 @@
+{application,exometer,
+             [{description,"Code instrumentation and metrics collection package."},
+              {vsn,"1.2-5-gfa4f539"},
+              {registered,[]},
+              {applications,[kernel,stdlib,lager,exometer_core]},
+              {included_applications,[]},
+              {mod,{exometer_app,[]}},
+              {env,[]},
+              {modules,[exometer_app,exometer_netlink,exometer_report_amqp,
+                        exometer_report_graphite,exometer_report_opentsdb,
+                        exometer_report_snmp,exometer_report_statsd,
+                        exometer_sup]}]}.

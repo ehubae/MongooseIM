@@ -1,0 +1,6 @@
+[
+{ "file"      : "c_src/ejabberd_zlib_drv.c"
+, "directory" : "/home/appadmin/sameer-mongooseim/apps/ejabberd"
+, "command"   : "cc -c -g -Wall -fPIC -MMD -I\"/usr/local/lib/erlang/lib/erl_interface-3.9.1/include\" -I\"/usr/local/lib/erlang/erts-8.1/include\" c_src/ejabberd_zlib_drv.c -o c_src/ejabberd_zlib_drv.o"
+}
+]

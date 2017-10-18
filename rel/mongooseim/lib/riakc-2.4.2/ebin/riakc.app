@@ -1,0 +1,10 @@
+{application,riakc,
+             [{description,"Riak Client"},
+              {vsn,"2.4.2"},
+              {applications,[kernel,stdlib,riak_pb]},
+              {registered,[]},
+              {env,[{timeout,60000}]},
+              {modules,[riakc_counter,riakc_datatype,riakc_flag,riakc_map,
+                        riakc_obj,riakc_pb_socket,riakc_register,riakc_set,
+                        riakc_ts,riakc_ts_get_operator,riakc_ts_put_operator,
+                        riakc_ts_query_operator,riakc_utils]}]}.

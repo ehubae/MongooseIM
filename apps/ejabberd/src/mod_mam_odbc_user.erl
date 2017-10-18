@@ -1,0 +1,188 @@
+%%%-------------------------------------------------------------------
+%%% @author Uvarov Michael <arcusfelis@gmail.com>
+%%% @copyright (C) 2013, Uvarov Michael
+%%% @doc Assigns archive integer identifiers (multihost version).
+%%%
+%%% This module supports several hosts.
+%%%
+%%% Archive id is assigned based on user_name and host.
+%%% @end
+%%%-------------------------------------------------------------------
+-module(mod_mam_odbc_user).
+
+%% gen_mod handlers
+-export([start/2, stop/1]).
+
+%% ejabberd handlers
+-export([archive_id/3,
+         remove_archive/3]).
+
+-include("ejabberd.hrl").
+-include("jlib.hrl").
+
+%% ----------------------------------------------------------------------
+%% gen_mod callbacks
+%% Starting and stopping functions for users' archives
+
+-spec start(ejabberd:server(),_) -> 'ok'.
+start(Host, Opts) ->
+    case gen_mod:get_module_opt(Host, ?MODULE, pm, false) of
+        true ->
+            start_pm(Host, Opts);
+        false ->
+            ok
+    end,
+    case gen_mod:get_module_opt(Host, ?MODULE, muc, false) of
+        true ->
+            start_muc(Host, Opts);
+        false ->
+            ok
+    end.
+
+
+-spec stop(ejabberd:server()) -> 'ok'.
+stop(Host) ->
+    case gen_mod:get_module_opt(Host, ?MODULE, pm, false) of
+        true ->
+            stop_pm(Host);
+        false ->
+            ok
+    end,
+    case gen_mod:get_module_opt(Host, ?MODULE, muc, false) of
+        true ->
+            stop_muc(Host);
+        false ->
+            ok
+    end.
+
+
+%% ----------------------------------------------------------------------
+%% Add hooks for mod_mam
+
+-spec start_pm(ejabberd:server(),_) -> 'ok'.
+start_pm(Host, _Opts) ->
+    ejabberd_hooks:add(mam_archive_id, Host, ?MODULE, archive_id, 50),
+    case gen_mod:get_module_opt(Host, ?MODULE, auto_remove, false) of
+        true ->
+            ejabberd_hooks:add(mam_remove_archive, Host, ?MODULE, remove_archive, 90),
+            ok;
+        false ->
+            ok
+    end,
+    ok.
+
+
+-spec stop_pm(ejabberd:server()) -> 'ok'.
+stop_pm(Host) ->
+    ejabberd_hooks:delete(mam_archive_id, Host, ?MODULE, archive_id, 50),
+    case gen_mod:get_module_opt(Host, ?MODULE, auto_remove, false) of
+        true ->
+            ejabberd_hooks:delete(mam_remove_archive, Host, ?MODULE, remove_archive, 90),
+            ok;
+        false ->
+            ok
+    end,
+    ok.
+
+
+%% ----------------------------------------------------------------------
+%% Add hooks for mod_mam_muc
+
+-spec start_muc(ejabberd:server(),_) -> 'ok'.
+start_muc(Host, _Opts) ->
+    ejabberd_hooks:add(mam_muc_archive_id, Host, ?MODULE, archive_id, 50),
+    case gen_mod:get_module_opt(Host, ?MODULE, auto_remove, false) of
+        true ->
+            ejabberd_hooks:add(mam_muc_remove_archive, Host, ?MODULE, remove_archive, 90),
+            ok;
+        false ->
+            ok
+    end,
+    ok.
+
+
+-spec stop_muc(ejabberd:server()) -> 'ok'.
+stop_muc(Host) ->
+    ejabberd_hooks:delete(mam_muc_archive_id, Host, ?MODULE, archive_id, 50),
+    case gen_mod:get_module_opt(Host, ?MODULE, auto_remove, false) of
+        true ->
+            ejabberd_hooks:delete(mam_muc_remove_archive, Host, ?MODULE, remove_archive, 90),
+            ok;
+        false ->
+            ok
+    end,
+    ok.
+
+
+%%====================================================================
+%% API
+%%====================================================================
+-spec archive_id(undefined | mod_mam:archive_id(), ejabberd:server(),
+                 ejabberd:jid()) -> mod_mam:archive_id().
+archive_id(undefined, Host, _ArcJID=#jid{lserver = Server, luser = UserName}) ->
+    query_archive_id(Host, Server, UserName);
+archive_id(ArcID, _Host, _ArcJID) ->
+    ArcID.
+
+-spec remove_archive(Host :: ejabberd:server(),
+    ArchiveID :: mod_mam:archive_id(), ArchiveJID :: ejabberd:jid()) -> 'ok'.
+remove_archive(Host, _ArcID, _ArcJID=#jid{lserver = Server, luser = UserName}) ->
+    SUserName = ejabberd_odbc:escape(UserName),
+    SServer   = ejabberd_odbc:escape(Server),
+    {updated, _} =
+    ejabberd_odbc:sql_query(
+      Host,
+      ["DELETE FROM mam_server_user "
+       "WHERE server = '", SServer, "' AND user_name = '", SUserName, "'"]),
+    ok.
+
+%%====================================================================
+%% Internal functions
+%%====================================================================
+
+-spec query_archive_id(ejabberd:server(), ejabberd:lserver(), ejabberd:user()) -> integer().
+query_archive_id(Host, Server, UserName) ->
+    SServer   = ejabberd_odbc:escape(Server),
+    SUserName = ejabberd_odbc:escape(UserName),
+    DbType = ejabberd_odbc_type:get(),
+    Result = do_query_archive_id(DbType, Host, SServer, SUserName),
+
+    case Result of
+        {selected, [<<"id">>], [{IdBin}]} when is_binary(IdBin) ->
+            binary_to_integer(IdBin);
+        {selected, [<<"id">>], [{IdBin}]}->
+            IdBin;
+        {selected, [<<"id">>], []} ->
+            %% The user is not found
+            create_user_archive(Host, Server, UserName),
+            query_archive_id(Host, Server, UserName)
+    end.
+    
+-spec create_user_archive(ejabberd:server(), ejabberd:lserver(), ejabberd:user()) -> 'ok'.
+create_user_archive(Host, Server, UserName) ->
+    SServer   = ejabberd_odbc:escape(Server),
+    SUserName = ejabberd_odbc:escape(UserName),
+    Res =
+    ejabberd_odbc:sql_query(
+      Host,
+      ["INSERT INTO mam_server_user "
+       "(server, user_name) VALUES ('", SServer, "', '", SUserName, "')"]),
+    case Res of
+        {updated, 1} ->
+            ok;
+        %% Ignore the race condition
+        %% Duplicate entry ... for key 'uc_mam_server_user_name'
+        {error,"#23000" ++ _} ->
+            ok
+        %% TODO duplicate entry and postgres?
+    end.
+
+do_query_archive_id(mssql, Host, SServer, SUserName) ->
+    odbc_queries_mssql:query_archive_id(Host, SServer, SUserName);
+do_query_archive_id(_, Host, SServer, SUserName) ->
+    ejabberd_odbc:sql_query(
+      Host,
+      ["SELECT id "
+       "FROM mam_server_user "
+       "WHERE server = '", SServer, "' AND user_name = '", SUserName, "' "
+       "LIMIT 1"]).

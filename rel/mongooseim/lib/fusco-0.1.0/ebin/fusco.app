@@ -1,0 +1,11 @@
+{application,fusco,
+             [{description,"Fast and Ultra Slim Connection Oriented HTTP Client"},
+              {vsn,"0.1.0"},
+              {modules,[fusco,fusco_binary,fusco_cp,fusco_lib,fusco_protocol,
+                        fusco_sock,test_utils,webserver]},
+              {registered,[]},
+              {applications,[kernel,stdlib,ssl]},
+              {env,[]},
+              {licenses,["Apache 2.0"]},
+              {links,[{"Github","https://github.com/esl/fusco"}]},
+              {build_tools,["rebar3"]}]}.

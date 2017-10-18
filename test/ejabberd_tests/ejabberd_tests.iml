@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="ERLANG_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="erlang" name="Erlang">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/ebin" />
+    <output-test url="file://$MODULE_DIR$/.eunit" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="erlsh" />
+    <orderEntry type="module" module-name="cowboy" />
+    <orderEntry type="module" module-name="katt" />
+    <orderEntry type="module" module-name="proper" />
+    <orderEntry type="module" module-name="usec" />
+    <orderEntry type="module" module-name="escalus" />
+    <orderEntry type="module" module-name="exml" />
+    <orderEntry type="module" module-name="jiffy" />
+    <orderEntry type="module" module-name="mustache" />
+  </component>
+</module>

@@ -1,0 +1,417 @@
+==> base16 (compile)
+==> cuesport (compile)
+==> redo (compile)
+==> exml (compile)
+make[1]: Entering directory `/home/appadmin/sameer-mongooseim/deps/exml/c_src'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/appadmin/sameer-mongooseim/deps/exml/c_src'
+==> goldrush (compile)
+==> lager (compile)
+==> syslog (compile)
+==> lager_syslog (compile)
+==> cowlib (compile)
+==> ranch (compile)
+==> cowboy (compile)
+==> edown (compile)
+==> parse_trans (compile)
+==> meck (compile)
+==> bear (compile)
+==> folsom (compile)
+==> setup (compile)
+==> edown (escriptize)
+==> setup (escriptize)
+==> src (compile)
+==> exometer_core (compile)
+==> src (compile)
+==> exometer (compile)
+==> mochijson2 (compile)
+==> jiffy (compile)
+==> alarms (compile)
+==> fusco (compile)
+==> idna (compile)
+==> poolboy (compile)
+==> quickrand (compile)
+==> uuid (compile)
+==> p1_mysql (compile)
+==> p1_pgsql (compile)
+==> p1_utils (compile)
+==> fast_tls (compile)
+==> protobuffs (pre_compile)
+==> protobuffs (compile)
+==> hamcrest (pre_compile)
+==> hamcrest (compile)
+==> hamcrest (post_compile)
+==> riak_pb (pre_compile)
+==> riak_pb (compile)
+==> riakc (compile)
+==> cache_tab (compile)
+==> stringprep (compile)
+==> proper (compile)
+make[1]: Entering directory `/home/appadmin/sameer-mongooseim/deps/proper'
+make[1]: `include/compile_flags.hrl' is up to date.
+make[1]: Leaving directory `/home/appadmin/sameer-mongooseim/deps/proper'
+==> pa (compile)
+==> usec (compile)
+==> jsx (compile)
+==> ecoveralls (compile)
+==> mustache (compile)
+==> recon (compile)
+==> ejabberd (compile)
+Compiled src/ejabberd_gen_mam_prefs.erl
+Compiled src/mod_muc_light_codec.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_utils.erl:168: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_utils.erl:637: Warning: variable 'Name' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_utils.erl:824: Warning: variable 'Offset' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_utils.erl:824: Warning: variable 'TotalCount' is unused
+Compiled src/mod_mam_utils.erl
+Compiled src/xmpp_router.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/gen_mod.erl:55: Warning: type ejabberd_module() is unused
+Compiled src/gen_mod.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline.erl:273: Warning: random:seed/1: the 'random' module is deprecated; use the 'rand' module instead
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline.erl:368: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline.erl:373: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_offline.erl
+Compiled src/cyrsasl.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_privacy.erl:125: Warning: variable 'IQDisc' is unused
+Compiled src/mod_privacy.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_sync_contact.erl:52: Warning: variable 'To' is unused
+Compiled src/mod_sync_contact.erl
+Compiled src/ejabberd_gen_auth.erl
+Compiled src/mod_auth_token.erl
+Compiled src/ejabberd_gen_mam_archive.erl
+Compiled src/gen_pubsub_node.erl
+Compiled src/gen_pubsub_nodetree.erl
+Compiled src/mod_bosh_backend.erl
+Compiled src/mongoose_api_format.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_roster.erl:397: Warning: variable 'LUserI' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_roster.erl:397: Warning: variable 'UserI' is unused
+Compiled src/mod_roster.erl
+Compiled src/mod_private.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_last.erl:136: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_last.erl:198: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_last.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:112: Warning: variable 'Role' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:113: Warning: variable 'Affiliation' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:116: Warning: variable 'FROM_FULL' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:118: Warning: variable 'LServer' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:146: Warning: variable 'Else' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:170: Warning: variable 'Else' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:182: Warning: variable 'Message' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:211: Warning: variable 'Resource' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:217: Warning: variable 'Host' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:217: Warning: variable 'IsOnline' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:217: Warning: variable 'UserJID' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:228: Warning: variable 'Host' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:275: Warning: variable 'ID' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:279: Warning: variable 'GROUP_ID' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:289: Warning: variable 'Head' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push.erl:289: Warning: variable 'State' is unused
+Compiled src/mod_offline_push.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_vcard.erl:239: Warning: variable 'Lang' is unused
+Compiled src/mod_vcard.erl
+Compiled src/mongoose_api_common.erl
+Compiled src/mam_message.erl
+Compiled src/mam_jid.erl
+Compiled src/translate.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_sync_contact_odbc.erl:19: Warning: record users is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_sync_contact_odbc.erl:41: Warning: variable 'I' is unused
+Compiled src/mod_sync_contact_odbc.erl
+Compiled src/xml.erl
+Compiled src/str.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/shaper_srv.erl:128: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/shaper_srv.erl:191: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/shaper_srv.erl
+Compiled src/sha.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/shaper.erl:57: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/shaper.erl:69: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/shaper.erl
+Compiled src/safely.erl
+Compiled src/randoms.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/scram.erl:140: Warning: crypto:rand_bytes/1 is deprecated and will be removed in a future release; use crypto:strong_rand_bytes/1
+Compiled src/scram.erl
+Compiled src/pubsub_index.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/supervisor2.erl:1487: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/supervisor2.erl
+Compiled src/pubsub_subscription.erl
+Compiled src/odbc_queries_mssql.erl
+Compiled src/p1_fsm_old.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/odbc_queries.erl:195: Warning: function insert_set_t/2 is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/odbc_queries.erl:633: Warning: variable 'Username' is unused
+Compiled src/odbc_queries.erl
+Compiled src/node_pep.erl
+Compiled src/node_hometree.erl
+Compiled src/nodetree_tree.erl
+Compiled src/node_dag.erl
+Compiled src/nodetree_dag.erl
+Compiled src/mongoose_session.erl
+Compiled src/node_flat.erl
+Compiled src/mongoose_router_global.erl
+Compiled src/mongoose_router_localdomain.erl
+Compiled src/mongoose_riak_sup.erl
+Compiled src/mongoose_router_external_localnode.erl
+Compiled src/mongoose_router_external.erl
+Compiled src/mongoose_riak.erl
+Compiled src/mongoose_metrics.erl
+Compiled src/mongoose_metrics_hooks.erl
+Compiled src/mongoose_local_delivery.erl
+Compiled src/mongoose_http_client_worker.erl
+Compiled src/mongoose_http_client_sup.erl
+Compiled src/mongoose_fips.erl
+Compiled src/mongoose_credentials.erl
+Compiled src/mongoose_cover_helper.erl
+Compiled src/mongoose_http_client.erl
+Compiled src/mongoose_cluster.erl
+Compiled src/mongoose_client_api_rooms_users.erl
+Compiled src/mongoose_client_api_rooms_messages.erl
+Compiled src/mongoose_commands.erl
+Compiled src/mongoose_client_api_rooms.erl
+Compiled src/mongoose_cleaner.erl
+Compiled src/mongoose_client_api.erl
+Compiled src/mongoose_client_api_messages.erl
+Compiled src/mongoose_api_users.erl
+Compiled src/mongoose_api_xml.erl
+Compiled src/mongoose_api_json.erl
+Compiled src/mongoose_api_metrics.erl
+Compiled src/mongoose_api_admin.erl
+Compiled src/mongoose_api.erl
+Compiled src/mongoose_api_client.erl
+Compiled src/mod_version.erl
+Compiled src/mod_websockets.erl
+Compiled src/mod_vcard_riak.erl
+Compiled src/mod_vcard_odbc.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_time.erl:47: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_time.erl
+Compiled src/mod_vcard_mnesia.erl
+Compiled src/mod_stream_management.erl
+Compiled src/mod_sic.erl
+Compiled src/mod_vcard_ldap.erl
+Compiled src/mod_roster_riak.erl
+Compiled src/mod_roster_odbc.erl
+Compiled src/mod_shared_roster_ldap.erl
+Compiled src/mod_roster_mnesia.erl
+Compiled src/mod_revproxy.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_register.erl:363: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_register.erl
+Compiled src/mod_private_riak.erl
+Compiled src/mod_private_odbc.erl
+Compiled src/mod_private_mysql.erl
+Compiled src/mod_private_mnesia.erl
+Compiled src/mod_privacy_riak.erl
+Compiled src/mod_privacy_odbc.erl
+Compiled src/mod_privacy_mnesia.erl
+Compiled src/mod_offline_stub.erl
+Compiled src/mod_ping.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push_odbc.erl:37: Warning: variable 'AVAILABILITY' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_push_odbc.erl:85: Warning: function maybe_encode_timestamp/1 is unused
+Compiled src/mod_offline_push_odbc.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_pubsub.erl:3895: Warning: variable 'Host' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_pubsub.erl:3898: Warning: variable 'Host' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_pubsub.erl:3908: Warning: variable 'Host' is unused
+Compiled src/mod_pubsub.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_riak.erl:148: Warning: variable 'User' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_riak.erl:175: Warning: random:uniform/1: the 'random' module is deprecated; use the 'rand' module instead
+Compiled src/mod_offline_riak.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_mnesia.erl:114: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_offline_mnesia.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_odbc.erl:51: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_offline_odbc.erl:114: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_offline_odbc.erl
+Compiled src/mod_muc_light_utils.erl
+Compiled src/mod_muc_light_room.erl
+Compiled src/mod_muc_light_db_odbc_sql.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_muc_log.erl:367: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_muc_log.erl:799: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_muc_log.erl:812: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_muc_log.erl:1013: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_muc_log.erl
+Compiled src/mod_muc_light_db_mnesia.erl
+Compiled src/mod_muc_light_db.erl
+Compiled src/mod_muc_light_db_odbc.erl
+Compiled src/mod_muc_light_commands.erl
+Compiled src/mod_muc_light_codec_modern.erl
+Compiled src/mod_muc_light_codec_legacy.erl
+Compiled src/mod_muc_iq.erl
+Compiled src/mod_muc_light.erl
+Compiled src/mod_muc_commands.erl
+Compiled src/mod_mam_sup.erl
+Compiled src/mod_muc_room.erl
+Compiled src/mod_mam_riak_timed_arch_yz.erl
+Compiled src/mod_mam_odbc_user.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_muc.erl:915: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_muc.erl
+Compiled src/mod_mam_odbc_prefs.erl
+Compiled src/mod_mam_odbc_async_pool_writer.erl
+Compiled src/mod_mam_muc_odbc_async_pool_writer.erl
+Compiled src/mod_mam_odbc_arch.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_muc_odbc_arch.erl:197: Warning: variable 'Reason' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_muc_odbc_arch.erl:203: Warning: variable 'Result' is unused
+Compiled src/mod_mam_muc_odbc_arch.erl
+Compiled src/mod_mam_muc_cache_user.erl
+Compiled src/mod_mam_mnesia_prefs.erl
+Compiled src/mod_mam_cache_user.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_muc.erl:484: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_muc.erl:539: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_muc.erl:625: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam_muc.erl:645: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_mam_muc.erl
+Compiled src/mod_last_riak.erl
+Compiled src/mod_last_odbc.erl
+Compiled src/mod_keystore_mnesia.erl
+Compiled src/mod_last_mnesia.erl
+Compiled src/mod_keystore.erl
+Compiled src/mod_http_notification.erl
+Compiled src/mod_csi.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam.erl:137: Warning: type restore_option() is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam.erl:333: Warning: variable 'Packet' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam.erl:471: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam.erl:525: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam.erl:606: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_mam.erl:626: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_mam.erl
+Compiled src/mod_cowboy.erl
+Compiled src/mod_disco.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_commands.erl:205: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_commands.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_carboncopy.erl:59: Warning: type matchspec_atom() is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_carboncopy.erl:192: Warning: variable 'PrioRes' is unused
+Compiled src/mod_carboncopy.erl
+Compiled src/mod_caps.erl
+Compiled src/mod_bosh_mnesia.erl
+Compiled src/mod_blocking.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_bosh.erl:345: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_bosh.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_bosh_socket.erl:558: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_bosh_socket.erl:674: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_bosh_socket.erl
+Compiled src/mod_auth_token_odbc.erl
+Compiled src/mod_admin_extra_stats.erl
+Compiled src/mod_admin_extra_vcard.erl
+Compiled src/mod_amp.erl
+Compiled src/mod_admin_extra_stanza.erl
+Compiled src/mod_admin_extra_srg.erl
+Compiled src/mod_admin_extra_sessions.erl
+Compiled src/mod_admin_extra_node.erl
+Compiled src/mod_admin_extra_private.erl
+Compiled src/mod_admin_extra_roster.erl
+Compiled src/mod_admin_extra_last.erl
+Compiled src/mod_admin_extra.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_admin_extra_accounts.erl:166: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/mod_admin_extra_accounts.erl:202: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/mod_admin_extra_accounts.erl
+Compiled src/mam_message_xml.erl
+Compiled src/mam_message_eterm.erl
+Compiled src/mam_message_compressed_eterm.erl
+Compiled src/mam_jid_rfc.erl
+Compiled src/mam_jid_mini.erl
+Compiled src/mod_adhoc.erl
+Compiled src/jid.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/gen_iq_handler.erl:128: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/gen_iq_handler.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/extauth.erl:137: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/extauth.erl:138: Warning: random:seed/3: the 'random' module is deprecated; use the 'rand' module instead
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/extauth.erl:139: Warning: random:uniform/1: the 'random' module is deprecated; use the 'rand' module instead
+Compiled src/extauth.erl
+Compiled src/eldap_pool.erl
+Compiled src/jlib.erl
+Compiled src/eldap_utils.erl
+Compiled src/eldap_filter.erl
+Compiled src/ejabberd_zlib.erl
+Compiled src/eldap_filter_yecc.erl
+Compiled src/ejabberd_users.erl
+Compiled src/ejabberd_tmp_sup.erl
+Compiled src/ejabberd_sup.erl
+Compiled src/ejabberd_socket.erl
+Compiled src/eldap.erl
+Compiled src/ejabberd_sm_backend_sup.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_sm_redis.erl:13: Warning: behaviour ejabberd_gen_sm undefined
+Compiled src/ejabberd_sm_redis.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_sm_mnesia.erl:11: Warning: behaviour ejabberd_gen_sm undefined
+Compiled src/ejabberd_sm_mnesia.erl
+Compiled src/ejabberd_service.erl
+Compiled src/ejabberd_sm.erl
+Compiled src/ejabberd_s2s_in.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_s2s.erl:626: Warning: crypto:rand_bytes/1 is deprecated and will be removed in a future release; use crypto:strong_rand_bytes/1
+Compiled src/ejabberd_s2s.erl
+Compiled src/ejabberd_redis.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_router.erl:69: Warning: type route() is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_router.erl:178: Warning: variable 'Node' is unused
+Compiled src/ejabberd_router.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_s2s_out.erl:1115: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_s2s_out.erl:1116: Warning: random:seed/3: the 'random' module is deprecated; use the 'rand' module instead
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_s2s_out.erl:1121: Warning: random:uniform/0: the 'random' module is deprecated; use the 'rand' module instead
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_s2s_out.erl:1290: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/ejabberd_s2s_out.erl
+Compiled src/ejabberd_receiver.erl
+Compiled src/ejabberd_rdbms.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_odbc_sup.erl:103: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/ejabberd_odbc_sup.erl
+Compiled src/ejabberd_loglevel.erl
+Compiled src/ejabberd_node_id.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_listener.erl:422: Warning: variable 'Module' is unused
+Compiled src/ejabberd_listener.erl
+Compiled src/ejabberd_local.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_odbc.erl:165: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_odbc.erl:168: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_odbc.erl:173: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_odbc.erl:463: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/ejabberd_odbc.erl
+Compiled src/ejabberd_gen_sm.erl
+Compiled src/ejabberd_hooks.erl
+Compiled src/ejabberd_cowboy.erl
+Compiled src/ejabberd_commands.erl
+Compiled src/ejabberd_check.erl
+Compiled src/ejabberd_ctl.erl
+Compiled src/ejabberd_binary.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_config.erl:154: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/ejabberd_config.erl
+Compiled src/ejabberd_auth_riak.erl
+Compiled src/ejabberd_auth_odbc.erl
+Compiled src/ejabberd_auth_internal.erl
+Compiled src/ejabberd_auth_ldap.erl
+Compiled src/ejabberd_auth_http.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_auth_external.erl:362: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/ejabberd_auth_external.erl
+Compiled src/ejabberd_auth_anonymous.erl
+Compiled src/ejabberd_auth.erl
+Compiled src/ejabberd_app.erl
+Compiled src/ejabberd.erl
+Compiled src/ejabberd_admin.erl
+Compiled src/dynamic_compile.erl
+Compiled src/cyrsasl_plain.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/cyrsasl_oauth.erl:19: Warning: variable 'Host' is unused
+Compiled src/cyrsasl_oauth.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/cyrsasl_scram.erl:87: Warning: crypto:rand_bytes/1 is deprecated and will be removed in a future release; use crypto:strong_rand_bytes/1
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/cyrsasl_scram.erl:102: Warning: crypto:rand_bytes/1 is deprecated and will be removed in a future release; use crypto:strong_rand_bytes/1
+Compiled src/cyrsasl_scram.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/cyrsasl_anonymous.erl:45: Warning: variable 'Host' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/cyrsasl_anonymous.erl:52: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/cyrsasl_anonymous.erl
+Compiled src/ct_progress_hook.erl
+Compiled src/cyrsasl_digest.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_c2s.erl:671: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_c2s.erl:828: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_c2s.erl:2647: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_c2s.erl:2655: Warning: crypto:rand_bytes/1 is deprecated and will be removed in a future release; use crypto:strong_rand_bytes/1
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/ejabberd_c2s.erl:2864: Warning: erlang:now/0: Deprecated BIF. See the "Time and Time Correction in Erlang" chapter of the ERTS User's Guide for more information.
+Compiled src/ejabberd_c2s.erl
+Compiled src/amp_strategy.erl
+Compiled src/amp_resolver.erl
+Compiled src/adhoc.erl
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/acl.erl:127: Warning: variable 'Default' is unused
+/home/appadmin/sameer-mongooseim/apps/ejabberd/src/acl.erl:129: Warning: variable 'Default' is unused
+Compiled src/acl.erl
+Compiled src/XmppAddr.erl
+Compiled src/amp.erl
+Compiled src/ELDAPv3.erl
+Compiled src/bin_to_hex.erl
+==> rel (compile)
+==> sameer-mongooseim (compile)
+==> meck (pre_compile)
+==> meck (compile)
+==> protobuffs (pre_compile)
+==> protobuffs (compile)
+==> hamcrest (pre_compile)
+==> hamcrest (compile)
+==> hamcrest (post_compile)
+==> riak_pb (pre_compile)
+==> riak_pb (compile)

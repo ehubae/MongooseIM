@@ -1,0 +1,8 @@
+run_erl [51683] Fri Oct  6 22:52:11 2017
+Args before exec of shell:
+run_erl [51683] Fri Oct  6 22:52:11 2017
+argv[0] = sh
+run_erl [51683] Fri Oct  6 22:52:11 2017
+argv[1] = -c
+run_erl [51683] Fri Oct  6 22:52:11 2017
+argv[2] = exec /home/appadmin/sameer-mongooseim/rel/mongooseim/bin/mongooseim console 

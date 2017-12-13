@@ -31,6 +31,7 @@
 -xep([{xep, 86}, {version, "1.0"}]).
 -export([make_result_iq_reply/1,
          make_error_reply/2,
+         make_sent_reply/2,
          make_invitation/3,
          make_config_change_message/1,
          make_voice_approval_form/3,
@@ -58,6 +59,7 @@
          stanza_errort/5,
          stream_error/1,
          stream_errort/3,
+         stanza_result/3,
          remove_delay_tags/1]).
 
 -include_lib("exml/include/exml.hrl").
@@ -135,6 +137,12 @@ make_error_reply(#xmlel{name = Name, attrs = Attrs,
     NewAttrs = make_error_reply_attrs(Attrs),
     #xmlel{name = Name, attrs = NewAttrs, children = SubTags ++ [Error]}.
 
+
+-spec make_sent_reply(xmlel(), xmlcdata() | xmlel()) -> xmlel().
+make_sent_reply(#xmlel{name = Name, attrs = Attrs,
+  children = SubTags}, Error) ->
+  NewAttrs = make_error_reply_attrs(Attrs),
+  #xmlel{name = Name, attrs = NewAttrs, children = SubTags ++ [Error]}.
 
 -spec make_error_reply_attrs([binary_pair()]) -> [binary_pair(),...].
 make_error_reply_attrs(Attrs) ->
@@ -801,6 +809,14 @@ stanza_error(Code, Type, Condition) ->
                              , attrs = [{<<"xmlns">>, ?NS_STANZAS}]
                              }]
         }.
+
+stanza_result(Code, Type, Condition) ->
+  #xmlel{ name = <<"result">>
+    , attrs = [{<<"code">>, Code}, {<<"type">>, Type}]
+    , children = [ #xmlel{ name = Condition
+      , attrs = [{<<"xmlns">>, ?NS_STANZAS}]
+    }]
+  }.
 
 -spec stanza_errort( Code :: binary()
                    , Type :: binary()

@@ -114,7 +114,6 @@ filter_room_packet(Packet, EventData) ->
       Type = xml:get_tag_attr_s(list_to_binary("type"), Packet),
       Id = xml:get_tag_attr_s(list_to_binary("id"), Packet),
       FROM_FULL = xml:get_tag_attr_s(list_to_binary("from"), Packet),
-      To = xml:get_tag_attr_s(list_to_binary("to"), Packet),
       Body = xml:get_path_s(Packet, [{elem, list_to_binary("body")}, cdata]),
       #jid{luser = LUser, lserver = LServer} = RoomJID,
       FromUser=FromJID#jid.luser,
@@ -123,7 +122,7 @@ filter_room_packet(Packet, EventData) ->
 
   if((LUser /= <<"">>) and (Type == <<"groupchat">>))->
     Sent = jlib:make_sent_reply(Packet, ?MESSAGE_SENT),
-    ejabberd_router:route(list_to_binary(To), list_to_binary(FromJID), Sent),
+    ejabberd_router:route(RoomJID, FromJID, Sent),
       if (Body == <<"">>) ->
         X = xml:get_subtag(Packet, <<"x">>),
 

@@ -140,9 +140,9 @@ make_error_reply(#xmlel{name = Name, attrs = Attrs,
 
 -spec make_sent_reply(xmlel(), xmlcdata() | xmlel()) -> xmlel().
 make_sent_reply(#xmlel{name = Name, attrs = Attrs,
-  children = SubTags}, Error) ->
-  NewAttrs = make_error_reply_attrs(Attrs),
-  #xmlel{name = Name, attrs = NewAttrs, children = SubTags ++ [Error]}.
+  children = SubTags}, Sent) ->
+  NewAttrs = make_sent_reply_attrs(Attrs),
+  #xmlel{name = Name, attrs = NewAttrs, children = SubTags ++ [Sent]}.
 
 -spec make_error_reply_attrs([binary_pair()]) -> [binary_pair(),...].
 make_error_reply_attrs(Attrs) ->
@@ -166,6 +166,27 @@ make_error_reply_attrs(Attrs) ->
     Attrs6 = [{<<"type">>, <<"error">>} | Attrs5],
     Attrs6.
 
+-spec make_sent_reply_attrs([binary_pair()]) -> [binary_pair(),...].
+make_sent_reply_attrs(Attrs) ->
+  To = xml:get_attr(<<"to">>, Attrs),
+  From = xml:get_attr(<<"from">>, Attrs),
+  Attrs1 = lists:keydelete(<<"to">>, 1, Attrs),
+  Attrs2 = lists:keydelete(<<"from">>, 1, Attrs1),
+  Attrs3 = case To of
+             {value, ToVal} ->
+               [{<<"from">>, ToVal} | Attrs2];
+             _ ->
+               Attrs2
+           end,
+  Attrs4 = case From of
+             {value, FromVal} ->
+               [{<<"to">>, FromVal} | Attrs3];
+             _ ->
+               Attrs3
+           end,
+  Attrs5 = lists:keydelete(<<"type">>, 1, Attrs4),
+  Attrs6 = [{<<"type">>, <<"chat">>} | Attrs5],
+  Attrs6.
 
 -spec make_config_change_message(binary()) -> xmlel().
 make_config_change_message(Status) ->

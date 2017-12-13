@@ -123,7 +123,7 @@ filter_room_packet(Packet, EventData) ->
 
   if((LUser /= <<"">>) and (Type == <<"groupchat">>))->
     Sent = jlib:make_sent_reply(Packet, ?MESSAGE_SENT),
-    ejabberd_router:route(To, FromJID, Sent),
+    ejabberd_router:route(list_to_binary(To), list_to_binary(FromJID), Sent),
       if (Body == <<"">>) ->
         X = xml:get_subtag(Packet, <<"x">>),
 

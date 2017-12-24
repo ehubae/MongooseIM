@@ -186,7 +186,7 @@ make_sent_reply_attrs(Attrs) ->
            end,
   Attrs5 = lists:keydelete(<<"type">>, 1, Attrs4),
   Attrs6 = [{<<"type">>, <<"chat">>} | Attrs5],
-  Attrs7 =[{<<"time">>,ejabberd_binary:string_to_binary(os:timestamp())}|Attrs6],
+  Attrs7 =[{<<"time">>,jlib:now_to_utc_binary(os:timestamp())}|Attrs6],
   Attrs7.
 
 -spec make_config_change_message(binary()) -> xmlel().

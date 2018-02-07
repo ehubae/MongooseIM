@@ -69,13 +69,16 @@ start(Host, Opts) ->
   gen_mod:start_backend_module(?MODULE, Opts, [set_availability,get_availability,get_group_name,get_members,record_to_offline_message]),
   MUCHost =  gen_mod:get_module_opt_host(Host, ?MODULE, ?MUC_LIGHT_DEFAULT_HOST),
   ?BACKEND:init(Host, Opts),
-  {ok,#state{url=gen_mod:get_opt(url, Opts, "")}},
+  Url=gen_mod:get_opt(url, Opts, ""),
+  ?DEBUG("+++++++ Url: ~s", [Url]),
+  ?DEBUG("+++++++ Url: ~s", [binary_to_list(Url)]),
+  {ok,#state{url=Url}},
   ejabberd_hooks:add(filter_room_packet, MUCHost, ?MODULE, filter_room_packet, 90),
   ejabberd_hooks:add(rest_user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_available_hook, Host, ?MODULE, user_present, 90),
   ejabberd_hooks:add(unset_presence_hook, Host, ?MODULE, user_not_present, 90),
-  ?DEBUG("+++++++ Url: ~s", [list_to_binary(#state.url)]),
+  ?DEBUG("+++++++ Url: ~s", [binary_to_list(#state.url)]),
   ok.
 
 -spec stop(Host :: ejabberd:server()) -> ok.

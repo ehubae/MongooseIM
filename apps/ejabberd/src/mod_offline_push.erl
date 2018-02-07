@@ -69,7 +69,7 @@ start(Host, Opts) ->
   gen_mod:start_backend_module(?MODULE, Opts, [set_availability,get_availability,get_group_name,get_members,record_to_offline_message]),
   MUCHost =  gen_mod:get_module_opt_host(Host, ?MODULE, ?MUC_LIGHT_DEFAULT_HOST),
   ?BACKEND:init(Host, Opts),
-  #state{url=gen_mod:get_opt(url, Opts, "")},
+  {ok,#state{url=gen_mod:get_opt(url, Opts, "")},
   ejabberd_hooks:add(filter_room_packet, MUCHost, ?MODULE, filter_room_packet, 90),
   ejabberd_hooks:add(rest_user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_send_packet, Host, ?MODULE, user_send_packet, 90),

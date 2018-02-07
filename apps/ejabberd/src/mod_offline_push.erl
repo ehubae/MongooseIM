@@ -77,7 +77,7 @@ start(Host, Opts) ->
   ejabberd_hooks:add(user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_available_hook, Host, ?MODULE, user_present, 90),
   ejabberd_hooks:add(unset_presence_hook, Host, ?MODULE, user_not_present, 90),
-  ?DEBUG("+++++++ Url: ~s", [#state.url]),
+  ?DEBUG("+++++++ Url: ~s", [binary:bin_to_list(#state.url)]),
   ok.
 
 -spec stop(Host :: ejabberd:server()) -> ok.

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sameer-mongooseim.iml" filepath="$PROJECT_DIR$/sameer-mongooseim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MongooseIM.iml" filepath="$PROJECT_DIR$/MongooseIM.iml" />
     </modules>
   </component>
 </project>

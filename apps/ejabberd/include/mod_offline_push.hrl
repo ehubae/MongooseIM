@@ -9,4 +9,4 @@
 -author("jaspreet").
 
 -record(message, {body, from,from_jid,type,id,group_id,resource,to,timestamp,packet,server,mime,group_name}).
--record(state,{url}).
+-record(state,{url = <<"">>}).

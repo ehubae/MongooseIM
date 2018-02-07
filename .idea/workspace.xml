@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="">
+    <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="url changed from config file">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/include/mod_offline_push.hrl" afterPath="$PROJECT_DIR$/apps/ejabberd/include/mod_offline_push.hrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,68 +23,8 @@
       <file leaf-file-name="mod_offline_push.erl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_muc_light.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_muc_light.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="142" column="57" lean-forward="true" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_muc.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_muc.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="291" column="48" lean-forward="false" selection-start-line="291" selection-start-column="35" selection-end-line="291" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_ping.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_ping.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="114" column="21" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_offline_push.hrl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/mod_offline_push.hrl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_roster.hrl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/mod_roster.hrl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fill_roster.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/fill_roster.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="79" column="40" lean-forward="false" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -94,8 +35,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>PingInterval</find>
-      <find>Message</find>
       <find>#state</find>
+      <find>Message</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -503,7 +444,21 @@
       <option name="project" value="LOCAL" />
       <updated>1517997526885</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="url changed from config file">
+      <created>1518007116426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518007116426</updated>
+    </task>
+    <task id="LOCAL-00006" summary="bug fix">
+      <created>1518007658089</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518007658090</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -563,7 +518,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33762518" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -575,7 +530,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="url changed from config file" />
-    <option name="LAST_COMMIT_MESSAGE" value="url changed from config file" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -614,26 +570,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/mod_offline_push.hrl">
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_ping.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="142">
+          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_ping.erl">
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/mod_offline_push.hrl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="114" column="21" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="21" />
+        <state relative-caret-position="165">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="79" column="40" lean-forward="false" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
           <folding />
         </state>
       </provider>

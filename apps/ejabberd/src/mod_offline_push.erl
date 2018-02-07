@@ -71,7 +71,6 @@ start(Host, Opts) ->
   ?BACKEND:init(Host, Opts),
   Url=gen_mod:get_opt(url, Opts, ""),
   ?DEBUG("+++++++ Url: ~s", [Url]),
-  ?DEBUG("+++++++ Url: ~s", [binary_to_list(Url)]),
   {ok,#state{url=Url}},
   ejabberd_hooks:add(filter_room_packet, MUCHost, ?MODULE, filter_room_packet, 90),
   ejabberd_hooks:add(rest_user_send_packet, Host, ?MODULE, user_send_packet, 90),

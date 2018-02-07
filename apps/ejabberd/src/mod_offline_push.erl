@@ -16,7 +16,7 @@
 -include_lib("ejabberd/include/mod_offline_push.hrl").
 
 -define(BACKEND, mod_offline_push_backend).
--define(LOG_URL, "http://google.com").
+-define(LOG_URL, "").
 
 -define(MUC_LIGHT_DEFAULT_HOST,<<"muclight.chat.devinprocess.com">>).
 -define(NS_FILE,       <<"jabber:x:file">>).
@@ -69,15 +69,13 @@ start(Host, Opts) ->
   gen_mod:start_backend_module(?MODULE, Opts, [set_availability,get_availability,get_group_name,get_members,record_to_offline_message]),
   MUCHost =  gen_mod:get_module_opt_host(Host, ?MODULE, ?MUC_LIGHT_DEFAULT_HOST),
   ?BACKEND:init(Host, Opts),
-  Url=gen_mod:get_opt(url, Opts, ""),
-  ?DEBUG("+++++++ Url: ~s", [Url]),
-  {ok,#state{url=Url}},
+  LOG_URL=gen_mod:get_opt(url, Opts, ""),
+  ?DEBUG("+++++++ Url: ~s", [LOG_URL]),
   ejabberd_hooks:add(filter_room_packet, MUCHost, ?MODULE, filter_room_packet, 90),
   ejabberd_hooks:add(rest_user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_available_hook, Host, ?MODULE, user_present, 90),
   ejabberd_hooks:add(unset_presence_hook, Host, ?MODULE, user_not_present, 90),
-  ?DEBUG("+++++++ Url: ~s", [binary:bin_to_list(#state.url)]),
   ok.
 
 -spec stop(Host :: ejabberd:server()) -> ok.
@@ -102,6 +100,7 @@ user_send_packet(From, To, Packet) ->
 %%  ?DEBUG("Send packet~n    from ~p ~n    to ~p~n    packet ~p.", [From, To, Packet]),
   handle_packet(From,To,Packet),
   ok.
+
 
 %% ----------------------------------------------------------------------
 %% hooks and handlers for MUC
@@ -287,7 +286,7 @@ log_msg(BODY,FROM,TO,TYPE,GROUP_ID,MIME,GROUP_NAME) ->
   Body= "{\"alert\":\"" ++ binary:bin_to_list(BODY) ++ "\",\"MimeType\":\"" ++ binary:bin_to_list(MIME) ++ "\",\"channel\":\"" ++ binary:bin_to_list(TO) ++ "\",\"ChatType\":\"" ++ binary:bin_to_list(TYPE) ++ "\",\"Domain\":\"" ++ ?NS_DOMAIN ++ "\",\"GroupName\":\"" ++ binary:bin_to_list(GROUP_NAME) ++ "\",\"from\":\"" ++ binary:bin_to_list(FROM) ++ "\"}",
 %%  ?DEBUG("+++++++ encoded json: ~s", [Body]),
   Method = post,
-  URL = #state.url,
+  URL = ?LOG_URL,
   %%URL = "http://pushinstablocker.shared.svc/api/BooqChat/SendIOSPushNotification",
   Header = [],
   Type = "application/json",

@@ -16,7 +16,6 @@
 -include_lib("ejabberd/include/mod_offline_push.hrl").
 
 -define(BACKEND, mod_offline_push_backend).
--define(LOG_URL, "").
 
 -define(MUC_LIGHT_DEFAULT_HOST,<<"muclight.chat.devinprocess.com">>).
 -define(NS_FILE,       <<"jabber:x:file">>).
@@ -69,7 +68,6 @@ start(Host, Opts) ->
   gen_mod:start_backend_module(?MODULE, Opts, [set_availability,get_availability,get_group_name,get_members,record_to_offline_message]),
   MUCHost =  gen_mod:get_module_opt_host(Host, ?MODULE, ?MUC_LIGHT_DEFAULT_HOST),
   ?BACKEND:init(Host, Opts),
-  ?DEBUG("+++++++ Url: ~s", [LOG_URL]),
   ejabberd_hooks:add(filter_room_packet, MUCHost, ?MODULE, filter_room_packet, 90),
   ejabberd_hooks:add(rest_user_send_packet, Host, ?MODULE, user_send_packet, 90),
   ejabberd_hooks:add(user_send_packet, Host, ?MODULE, user_send_packet, 90),
@@ -142,7 +140,7 @@ filter_room_packet(Packet, EventData) ->
 
                                             case catch ?BACKEND:get_members(LUser, FromServer) of
                                               {ok, List} ->
-                                                iterate_list(List,Message),
+                                                iterate_list(List,Message,FromJID#jid.lserver),
                                                 Packet;
                                               {error,[]} ->
                                                 Packet;
@@ -166,7 +164,7 @@ filter_room_packet(Packet, EventData) ->
               Message=#message{mime= <<"">>,body = Body,from = FromUser,from_jid=FromJID,type = Type,id = Id,group_id = LUser,resource = FromResource,timestamp = os:timestamp(),packet = Packet,server = FromServer,group_name = Group_Name},
               case catch ?BACKEND:get_members(LUser, FromServer) of
                 {ok, List} ->
-                  iterate_list(List,Message),
+                  iterate_list(List,Message,FromJID#jid.lserver),
                   Packet;
                 {error,[]} ->
                   Packet;
@@ -182,20 +180,20 @@ filter_room_packet(Packet, EventData) ->
   end.
 
 
-iterate_list( [],Message,Res) ->
+iterate_list( [],Message,Res,Host) ->
   Res;
-iterate_list( [I | Is],Message,Res) ->
-  log_msg(Message,I),
-  iterate_list(Is,Message,[I|Res]).
-iterate_list(List,Message) ->
-  iterate_list(List,Message, []).
+iterate_list( [I | Is],Message,Res,Host) ->
+  log_msg(Message,I,Host),
+  iterate_list(Is,Message,[I|Res],Host).
+iterate_list(List,Message,Host) ->
+  iterate_list(List,Message, [],Host).
 
-log_msg(Message,{User})->
-  log_msg(Message#message.mime,Message#message.body,Message#message.from,User,Message#message.type,Message#message.id,Message#message.group_id,Message#message.group_name),
+log_msg(Message,{User},Host)->
+  log_msg(Message#message.mime,Message#message.body,Message#message.from,User,Message#message.type,Message#message.id,Message#message.group_id,Message#message.group_name,Host),
   ?BACKEND:record_to_offline_message(User,Message#message.server,Message).
 
-log_msg(Message)->
-  log_msg(Message#message.mime,Message#message.body,Message#message.from,Message#message.to,Message#message.type,Message#message.id,Message#message.group_id,Message#message.group_name).
+log_msg(Message,Host)->
+  log_msg(Message#message.mime,Message#message.body,Message#message.from,Message#message.to,Message#message.type,Message#message.id,Message#message.group_id,Message#message.group_name,Host).
 %%  ?BACKEND:record_to_offline_message(Message#message.from,Message#message.server,Message).
 
 %% Handle user_available_hook
@@ -254,7 +252,7 @@ handle_packet(From = #jid{lserver = Host}, To, Packet) ->
                         Mime = xml:get_path_s(X, [{elem, list_to_binary("mime")}, cdata]),
 %%                        ?DEBUG(" Mime in SubTag = ~s", [Mime]),
                         Message=#message{mime=Mime,body = Body,from = FromUser,type = Type,id = Id,group_id = From,resource = Resource,to = LUser ,packet = Packet,group_name = <<"">>},
-                        log_msg(Message);
+                        log_msg(Message,To#jid.lserver);
 
                      true ->
                       ok
@@ -265,7 +263,7 @@ handle_packet(From = #jid{lserver = Host}, To, Packet) ->
             end;
             true ->
               Message=#message{mime= <<"">>,body = Body,from = FromUser,type = Type,id = Id,group_id = From,resource = Resource,to = LUser ,packet = Packet,group_name = <<"">>},
-              log_msg(Message)
+              log_msg(Message,To#jid.lserver)
           end;
       none ->
         ok
@@ -277,16 +275,15 @@ handle_packet(From = #jid{lserver = Host}, To, Packet) ->
  end.
 
 
-log_msg(MIME,BODY,FROM,TO,TYPE,ID,GROUP_ID,GROUP_NAME) ->
-  log_msg(BODY,FROM,TO,TYPE,GROUP_ID,MIME,GROUP_NAME).
+log_msg(MIME,BODY,FROM,TO,TYPE,ID,GROUP_ID,GROUP_NAME,Host) ->
+  log_msg(BODY,FROM,TO,TYPE,GROUP_ID,MIME,GROUP_NAME,Host).
 %%
 
-log_msg(BODY,FROM,TO,TYPE,GROUP_ID,MIME,GROUP_NAME) ->
+log_msg(BODY,FROM,TO,TYPE,GROUP_ID,MIME,GROUP_NAME,Host) ->
   Body= "{\"alert\":\"" ++ binary:bin_to_list(BODY) ++ "\",\"MimeType\":\"" ++ binary:bin_to_list(MIME) ++ "\",\"channel\":\"" ++ binary:bin_to_list(TO) ++ "\",\"ChatType\":\"" ++ binary:bin_to_list(TYPE) ++ "\",\"Domain\":\"" ++ ?NS_DOMAIN ++ "\",\"GroupName\":\"" ++ binary:bin_to_list(GROUP_NAME) ++ "\",\"from\":\"" ++ binary:bin_to_list(FROM) ++ "\"}",
 %%  ?DEBUG("+++++++ encoded json: ~s", [Body]),
   Method = post,
-  URL = gen_mod:get_module_opt(To#jid.lserver, ?MODULE, url, [] ),
-%%  URL = "http://pushinstablocker.shared.svc/api/BooqChat/SendIOSPushNotification",
+  URL = gen_mod:get_module_opt(Host, ?MODULE, url, [] ),
   Header = [],
   Type = "application/json",
   HTTPOptions = [],

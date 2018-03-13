@@ -28,7 +28,7 @@
 -export([start/2, stop/1]).
 
 %% Hooks
--export([user_send_packet/3, user_present/1, user_not_present/4, filter_room_packet/2,log_msg/8,log_msg/2,log_msg/1]).
+-export([user_send_packet/3, user_present/1, user_not_present/4, filter_room_packet/2,log_msg/8,log_msg/2,log_msg/3]).
 
 
 -callback init(Host, Opts) -> ok when

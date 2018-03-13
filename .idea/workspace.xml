@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="url changed from config file">
+    <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="mod_offline_push.erl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="287" column="59" lean-forward="false" selection-start-line="287" selection-start-column="59" selection-end-line="287" selection-end-column="59" />
+            <state relative-caret-position="360">
+              <caret line="284" column="64" lean-forward="false" selection-start-line="284" selection-start-column="64" selection-end-line="284" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -496,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518011730784</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="url changed from config file">
+      <created>1520938394390</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1520938394390</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -969,8 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="287" column="59" lean-forward="false" selection-start-line="287" selection-start-column="59" selection-end-line="287" selection-end-column="59" />
+        <state relative-caret-position="360">
+          <caret line="284" column="64" lean-forward="false" selection-start-line="284" selection-start-column="64" selection-end-line="284" selection-end-column="64" />
           <folding />
         </state>
       </provider>

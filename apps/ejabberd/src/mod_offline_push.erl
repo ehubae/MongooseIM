@@ -281,17 +281,13 @@ log_msg(MIME,BODY,FROM,TO,TYPE,ID,GROUP_ID,GROUP_NAME,Host) ->
 
 log_msg(BODY,FROM,TO,TYPE,GROUP_ID,MIME,GROUP_NAME,Host) ->
   Body= "{\"alert\":\"" ++ binary:bin_to_list(BODY) ++ "\",\"MimeType\":\"" ++ binary:bin_to_list(MIME) ++ "\",\"channel\":\"" ++ binary:bin_to_list(TO) ++ "\",\"ChatType\":\"" ++ binary:bin_to_list(TYPE) ++ "\",\"Domain\":\"" ++ ?NS_DOMAIN ++ "\",\"GroupName\":\"" ++ binary:bin_to_list(GROUP_NAME) ++ "\",\"from\":\"" ++ binary:bin_to_list(FROM) ++ "\"}",
-%%  ?DEBUG("+++++++ encoded json: ~s", [Body]),
   Method = post,
   URL = gen_mod:get_module_opt(Host, ?MODULE, url, [] ),
   Header = [],
   Type = "application/json",
   HTTPOptions = [],
-  Options = [],
-  R = httpc:request(Method, {URL, Header, Type, Body}, HTTPOptions, Options),
-  {ok, {{"HTTP/1.1",ReturnCode, State}, Head, Res}} = R,
-  ?DEBUG("+++++++ SendIOSPushNotification response code : ~p ",[ReturnCode]),
-  ?DEBUG("+++++++ SendIOSPushNotification response body : ~p ",[Res]).
+  Options = [{sync, false}],
+  httpc:request(Method, {URL, Header, Type, Body}, HTTPOptions, Options).
 
 
 

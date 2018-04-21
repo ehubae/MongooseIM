@@ -28,7 +28,7 @@
 -export([start/2, stop/1]).
 
 %% Hooks
--export([user_send_packet/3, user_present/1, user_not_present/4, filter_room_packet/2,log_msg/8,log_msg/2,log_msg/3]).
+-export([user_send_packet/3, user_present/1, user_not_present/4, filter_room_packet/2,log_msg/8,log_msg/2,log_msg/3,send_sent_status/3]).
 
 
 -callback init(Host, Opts) -> ok when
@@ -121,8 +121,7 @@ filter_room_packet(Packet, EventData) ->
       FromServer=FromJID#jid.lserver,
 
   if((LUser /= <<"">>) and (Type == <<"groupchat">>))->
-    Sent = jlib:make_sent_reply(Packet, ?MESSAGE_SENT),
-    ejabberd_router:route(RoomJID, FromJID, Sent),
+    spawn(?MODULE, send_sent_status, [Packet,RoomJID,FromJID]),
       if (Body == <<"">>) ->
         X = xml:get_subtag(Packet, <<"x">>),
 
@@ -219,6 +218,11 @@ user_presence_changed(#jid{lserver = Host} = UserJID, IsOnline) ->
   ok.
 
 
+
+send_sent_status(Packet,To,From)->
+  Sent = jlib:make_sent_reply(Packet, ?MESSAGE_SENT),
+  ejabberd_router:route(To, From, Sent).
+
 %%%===================================================================
 %%% Internal functions
 %%%===================================================================
@@ -235,8 +239,7 @@ handle_packet(From = #jid{lserver = Host}, To, Packet) ->
   FromUser=From#jid.luser,
   Resource=From#jid.lresource,
   if((LUser /= <<"">>) and (Type == <<"chat">>))->
-    Sent = jlib:make_sent_reply(Packet, ?MESSAGE_SENT),
-    ejabberd_router:route(To, From, Sent),
+    spawn(?MODULE, send_sent_status, [Packet,To,From]),
     case catch ?BACKEND:get_availability(LUser, LServer) of
       {ok} ->
           if (Body == <<"">>) ->

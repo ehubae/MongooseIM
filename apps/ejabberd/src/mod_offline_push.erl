@@ -121,7 +121,7 @@ filter_room_packet(Packet, EventData) ->
       FromServer=FromJID#jid.lserver,
 
   if((LUser /= <<"">>) and (Type == <<"groupchat">>))->
-    spawn(?MODULE, send_sent_status, [Packet,RoomJID,FromJID]),
+%%    spawn(?MODULE, send_sent_status, [Packet,RoomJID,FromJID]),
       if (Body == <<"">>) ->
         X = xml:get_subtag(Packet, <<"x">>),
 
@@ -239,7 +239,7 @@ handle_packet(From = #jid{lserver = Host}, To, Packet) ->
   FromUser=From#jid.luser,
   Resource=From#jid.lresource,
   if((LUser /= <<"">>) and (Type == <<"chat">>))->
-    spawn(?MODULE, send_sent_status, [Packet,To,From]),
+%%    spawn(?MODULE, send_sent_status, [Packet,To,From]),
     case catch ?BACKEND:get_availability(LUser, LServer) of
       {ok} ->
           if (Body == <<"">>) ->

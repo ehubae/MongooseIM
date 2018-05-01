@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="">
+    <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="added sent status in different process">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" />
     </list>
@@ -22,8 +22,8 @@
       <file leaf-file-name="mod_offline_push.erl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1695">
-              <caret line="123" column="63" lean-forward="false" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
+            <state relative-caret-position="368">
+              <caret line="119" column="28" lean-forward="true" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -32,7 +32,7 @@
       <file leaf-file-name="jlib.hrl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="1755">
               <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
               <folding />
             </state>
@@ -42,7 +42,7 @@
       <file leaf-file-name="erlang.erl" pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/Cellar/erlang/19.2/lib/erlang/lib/erts-8.2/src/erlang.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="24480">
               <caret line="1632" column="0" lean-forward="false" selection-start-line="1632" selection-start-column="0" selection-end-line="1632" selection-end-column="0" />
               <folding />
             </state>
@@ -52,8 +52,8 @@
       <file leaf-file-name="mod_pubsub.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_pubsub.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="756" column="44" lean-forward="true" selection-start-line="756" selection-start-column="44" selection-end-line="756" selection-end-column="44" />
+            <state relative-caret-position="11340">
+              <caret line="756" column="44" lean-forward="false" selection-start-line="756" selection-start-column="44" selection-end-line="756" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -139,10 +139,11 @@
       <find>get_module_opt</find>
       <find>MUC_LIGHT_DEFAULT_HOST</find>
       <find>log_msg</find>
-      <find>sent</find>
       <find>send_loop</find>
       <find>?MODULE</find>
       <find>swan</find>
+      <find>sent</find>
+      <find>send_sent_status</find>
       <find>spawn</find>
     </findStrings>
   </component>
@@ -165,7 +166,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -182,10 +183,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -556,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521572508765</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added sent status in different process">
+      <created>1524316080041</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1524316080041</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="810" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -574,10 +582,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348806" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32689556" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33547926" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -614,9 +622,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32689556" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348806" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33547926" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -648,7 +656,8 @@
     <MESSAGE value="bug fix" />
     <MESSAGE value="url changed from config file" />
     <MESSAGE value="Options = [{sync, false}]," />
-    <option name="LAST_COMMIT_MESSAGE" value="Options = [{sync, false}]," />
+    <MESSAGE value="added sent status in different process" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sent status in different process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -716,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4455">
           <caret line="297" column="62" lean-forward="false" selection-start-line="297" selection-start-column="51" selection-end-line="297" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4455">
           <caret line="297" column="62" lean-forward="false" selection-start-line="297" selection-start-column="51" selection-end-line="297" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38775">
           <caret line="2585" column="26" lean-forward="false" selection-start-line="2585" selection-start-column="26" selection-end-line="2585" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="67" column="17" lean-forward="false" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4365">
           <caret line="291" column="87" lean-forward="false" selection-start-line="291" selection-start-column="77" selection-end-line="291" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2415">
           <caret line="161" column="63" lean-forward="false" selection-start-line="161" selection-start-column="51" selection-end-line="161" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1965">
           <caret line="131" column="6" lean-forward="false" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,15 +1003,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_pubsub.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="756" column="44" lean-forward="true" selection-start-line="756" selection-start-column="44" selection-end-line="756" selection-end-column="44" />
+        <state relative-caret-position="11340">
+          <caret line="756" column="44" lean-forward="false" selection-start-line="756" selection-start-column="44" selection-end-line="756" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/erlang/19.2/lib/erlang/lib/erts-8.2/src/erlang.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="24480">
           <caret line="1632" column="0" lean-forward="false" selection-start-line="1632" selection-start-column="0" selection-end-line="1632" selection-end-column="0" />
           <folding />
         </state>
@@ -1017,7 +1019,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="1755">
           <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
           <folding />
         </state>
@@ -1025,8 +1027,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="123" column="63" lean-forward="false" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
+        <state relative-caret-position="368">
+          <caret line="119" column="28" lean-forward="true" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="28" />
           <folding />
         </state>
       </provider>

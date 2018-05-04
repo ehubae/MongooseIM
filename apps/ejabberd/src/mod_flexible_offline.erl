@@ -7,7 +7,7 @@
 -module(mod_flexible_offline).
 -author('jaspreet@scrambleapps.com').
 -behaviour(gen_mod).
--export([start/2, stop/1, process_sm_iq/4,send_message/3]).
+-export([start/2, stop/1, process_sm_iq/3,send_message/3]).
 -include_lib("ejabberd/include/ejabberd.hrl").
 -include_lib("ejabberd/include/jlib.hrl").
 
@@ -42,10 +42,10 @@ stop(Host) ->
     gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_FLEXIBLE_OFFLINE).
 
 
-process_sm_iq(_From, _To, Acc, #iq{type = set, sub_el = SubEl} = IQ) ->
+process_sm_iq(_From, _To, #iq{type = set, sub_el = SubEl} = IQ) ->
     IQ#iq{type = error, sub_el = [SubEl, ?ERR_NOT_ALLOWED]};
 
-process_sm_iq(_From, _To, Acc, #iq{type = get,sub_el = SubEl} = IQ) ->
+process_sm_iq(_From, _To, #iq{type = get,sub_el = SubEl} = IQ) ->
     #jid{user = FromUser, lserver = FromVHost} = _From,
     ?DEBUG("Item =  ~p.", [SubEl]),
     Item = xml:get_subtag(SubEl, <<"item">>),

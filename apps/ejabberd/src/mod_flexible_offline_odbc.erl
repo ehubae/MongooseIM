@@ -33,7 +33,7 @@
 
 -include_lib("ejabberd/include/ejabberd.hrl").
 -include_lib("ejabberd/include/jlib.hrl").
-
+-include_lib("ejabberd/include/mod_offline.hrl").
 -define(OFFLINE_TABLE_LOCK_THRESHOLD, 1000).
 
 init(_Host, _Opts) ->

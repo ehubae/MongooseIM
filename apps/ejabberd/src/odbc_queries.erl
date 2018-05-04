@@ -99,6 +99,8 @@
 	     prepare_offline_message/6,
 	     push_offline_messages/2,
 	     pop_offline_messages/4,
+       fetch_offline_messages/5,
+       remove_offline_messages/4,
 	     count_offline_messages/4,
        get_registered_contacts/3,
 	     remove_old_offline_messages/2,
@@ -814,6 +816,29 @@ pop_offline_messages(LServer, SUser, SServer, STimeStamp) ->
           Res
         end,
     ejabberd_odbc:sql_transaction(LServer, F).
+
+
+fetch_offline_messages(LServer, SUser, SServer, STimeStamp,SFrom) ->
+  SelectSQL = select_offline_messages_sql(SUser, SServer, STimeStamp,SFrom),
+  mongoose_rdbms:sql_query(LServer,SelectSQL).
+
+remove_offline_messages(LServer, SUser, SServer,SFrom) ->
+  DeleteSQL = delete_offline_messages_sql(SUser, SServer,SFrom),
+  mongoose_rdbms:sql_query(LServer,DeleteSQL).
+
+select_offline_messages_sql(SUser, SServer, STimeStamp,SFrom) ->
+  [<<"select timestamp, from_jid, packet from offline_message "
+  "where server = '">>, SServer, <<"' and "
+  "username = '">>, SUser, <<"' and "
+  "from_jid Like '">>, SFrom, <<"%' and "
+  "(expire is null or expire > ">>, STimeStamp, <<") "
+  "ORDER BY timestamp ;">>].
+
+delete_offline_messages_sql(SUser, SServer,SFrom) ->
+  [<<"delete from offline_message "
+  "where server = '">>, SServer, <<"' and "
+  "from_jid Like '">>, SFrom, <<"%' and "
+  "username = '">>, SUser, <<"'">>].
 
 select_offline_messages_sql(SUser, SServer, STimeStamp) ->
     [<<"select timestamp, from_jid, packet from offline_message "

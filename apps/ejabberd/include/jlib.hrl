@@ -108,6 +108,8 @@
 
 -define(NS_HTTPBIND,     <<"http://jabber.org/protocol/httpbind">>).
 
+-define(NS_FLEXIBLE_OFFLINE,    <<"http://jabber.org/protocol/offline">>).
+
 -define(NS_STREAM_MGNT_3, <<"urn:xmpp:sm:3">>).
 
 -define(NS_CSI, <<"urn:xmpp:csi:0">>).

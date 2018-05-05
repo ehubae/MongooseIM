@@ -820,11 +820,11 @@ pop_offline_messages(LServer, SUser, SServer, STimeStamp) ->
 
 fetch_offline_messages(LServer, SUser, SServer, STimeStamp,SFrom) ->
   SelectSQL = select_offline_messages_sql(SUser, SServer, STimeStamp,SFrom),
-  mongoose_rdbms:sql_query(LServer,SelectSQL).
+  ejabberd_odbc:sql_query(LServer,SelectSQL).
 
 remove_offline_messages(LServer, SUser, SServer,SFrom) ->
   DeleteSQL = delete_offline_messages_sql(SUser, SServer,SFrom),
-  mongoose_rdbms:sql_query(LServer,DeleteSQL).
+  ejabberd_odbc:sql_query(LServer,DeleteSQL).
 
 select_offline_messages_sql(SUser, SServer, STimeStamp,SFrom) ->
   [<<"select timestamp, from_jid, packet from offline_message "

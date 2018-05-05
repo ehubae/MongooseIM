@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline_odbc.erl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" afterPath="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,41 +19,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mod_flexible_offline_odbc.erl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mod_flexible_offline.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="60" column="70" lean-forward="false" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod_flexible_offline_odbc.erl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline_odbc.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            <state relative-caret-position="176">
+              <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod_offline_odbc.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_odbc.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="odbc_queries.erl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="odbc_queries.erl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="824" column="23" lean-forward="false" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_vcard_odbc.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_vcard_odbc.erl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="317">
+              <caret line="826" column="15" lean-forward="false" selection-start-line="826" selection-start-column="15" selection-end-line="826" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -94,6 +81,7 @@
       <find>result_to_integer</find>
       <find>from_now</find>
       <find>exml:parse</find>
+      <find>resend_offline_message_packet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,15 +99,15 @@
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl" />
-        <option value="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline_odbc.erl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -136,9 +124,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,12 +138,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MongooseIM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MongooseIM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejabberd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MongooseIM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MongooseIM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejabberd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="flex&#9;FILE&#9;file:///Users/jaspreet/Documents/Clients/sameer/server/MongooseIM/apps/ejabberd/src/mod_flexible_offline.erl" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -415,6 +444,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="" />
@@ -542,11 +574,25 @@
       <option name="project" value="LOCAL" />
       <updated>1525151802381</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="flexible offline messages">
+      <created>1525465252778</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1525465252778</updated>
+    </task>
+    <task id="LOCAL-00019" summary="flexible offline messages">
+      <created>1525465875448</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1525465875448</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="810" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -560,10 +606,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348806" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32208157" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4055794" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41130185" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -600,8 +646,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348806" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33547926" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32208157" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41130185" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -636,7 +682,8 @@
     <MESSAGE value="Options = [{sync, false}]," />
     <MESSAGE value="added sent status in different process" />
     <MESSAGE value="removed sent status" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed sent status" />
+    <MESSAGE value="flexible offline messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="flexible offline messages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -900,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4170">
           <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,27 +1021,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_vcard_odbc.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="824" column="23" lean-forward="false" selection-start-line="824" selection-start-column="0" selection-end-line="824" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,10 +1036,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="60" column="70" lean-forward="false" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline_odbc.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        <state relative-caret-position="176">
+          <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="826" column="15" lean-forward="false" selection-start-line="826" selection-start-column="15" selection-end-line="826" selection-end-column="15" />
           <folding />
         </state>
       </provider>

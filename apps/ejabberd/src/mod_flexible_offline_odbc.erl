@@ -59,19 +59,9 @@ fetch_messages(LUser, LServer,SFrom) ->
 
 
 remove_messages(LUser, LServer,SFrom) ->
-    US = {LUser, LServer},
-    To = jid:make(LUser, LServer, <<>>),
     SUser = ejabberd_odbc:escape(LUser),
     SServer = ejabberd_odbc:escape(LServer),
-    case odbc_queries:remove_offline_messages(LServer, SUser, SServer,SFrom) of
-        {atomic, {selected, Rows}} ->
-            {ok, rows_to_records(US, To, Rows)};
-        {aborted, Reason} ->
-            {error, Reason};
-        {error, Reason} ->
-            {error, Reason}
-    end.
-
+    odbc_queries:remove_offline_messages(LServer, SUser, SServer,SFrom).
 
 rows_to_records(US, To, Rows) ->
     [row_to_record(US, To, Row) || Row <- Rows].

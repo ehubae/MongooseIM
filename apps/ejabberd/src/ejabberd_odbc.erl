@@ -121,6 +121,7 @@ start_link(Host, StartInterval, Dedicated) when is_boolean(Dedicated) ->
 
 -spec sql_query(Host :: odbc_server(), Query :: any()) -> any().
 sql_query(Host, Query) ->
+  ?DEBUG("MySQL, Send query~n~p~n", [Query]),
     sql_call(Host, {sql_query, Query}).
 
 -spec get_dedicated_connection(Host :: ejabberd:server())

@@ -830,14 +830,14 @@ select_offline_messages_sql(SUser, SServer, STimeStamp,SFrom) ->
   [<<"select timestamp, from_jid, packet from offline_message "
   "where server = '">>, SServer, <<"' and "
   "username = '">>, SUser, <<"' and "
-  "from_jid Like '">>, SFrom, <<"%' and "
+  "from_jid Like \"">>, SFrom, <<"%\" and "
   "(expire is null or expire > ">>, STimeStamp, <<") "
   "ORDER BY timestamp ;">>].
 
 delete_offline_messages_sql(SUser, SServer,SFrom) ->
   [<<"delete from offline_message "
   "where server = '">>, SServer, <<"' and "
-  "from_jid Like '">>, SFrom, <<"%' and "
+  "from_jid Like \"">>, SFrom, <<"%\" and "
   "username = '">>, SUser, <<"'">>].
 
 select_offline_messages_sql(SUser, SServer, STimeStamp) ->

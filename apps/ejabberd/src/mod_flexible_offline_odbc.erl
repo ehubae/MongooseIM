@@ -47,7 +47,7 @@ fetch_messages(LUser, LServer,SFrom) ->
     TimeStamp = now(),
     STimeStamp = encode_timestamp(TimeStamp),
     case odbc_queries:fetch_offline_messages(LServer, SUser, SServer, STimeStamp,SFrom) of
-        {selected, Rows} ->
+        {selected, [<<"timestamp">>,<<"from_jid">>,<<"packet">>],Rows} ->
             {ok, rows_to_records(US, To, Rows)};
         {aborted, Reason} ->
             {error, Reason};

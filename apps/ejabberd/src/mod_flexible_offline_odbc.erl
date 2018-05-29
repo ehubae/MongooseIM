@@ -68,7 +68,7 @@ rows_to_records(US, To, Rows) ->
 
 row_to_record(US, To, {STimeStamp, SFrom, SPacket}) ->
     {ok, Packet} = exml:parse(SPacket),
-    TimeStamp = usec:to_now(mongoose_rdbms:result_to_integer(STimeStamp)),
+    TimeStamp = usec:to_now(ejabberd_odbc:result_to_integer(STimeStamp)),
     From = jid:from_binary(SFrom),
     #offline_msg{us = US,
              timestamp = TimeStamp,

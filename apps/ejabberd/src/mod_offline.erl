@@ -51,7 +51,7 @@
 
 %% gen_server callbacks
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2,
-         terminate/2, code_change/3]).
+         terminate/2, code_change/3,resend_offline_message_packet/2]).
 
 %% helpers to be used from backend moudules
 -export([is_expired_message/2]).

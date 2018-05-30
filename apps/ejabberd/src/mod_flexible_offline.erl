@@ -60,7 +60,7 @@ process_sm_iq(_From, _To, #iq{type = get,sub_el = SubEl} = IQ) ->
                 lists:map(fun(R) ->
                     Packet = mod_offline:resend_offline_message_packet(FromVHost, R),
                     ?DEBUG("Packet =  ~p", [Packet]),
-                    spawn(?MODULE, send_message, [Packet,Node,_To])
+                    spawn(?MODULE, send_message, [Packet,R])
                           end, Rs);
             {error, Reason} ->
                 ?DEBUG("~ts@~ts: fetch_messages failed with ~p.", [FromUser, FromVHost, Reason]),
@@ -78,5 +78,5 @@ process_sm_iq(_From, _To, #iq{type = get,sub_el = SubEl} = IQ) ->
             children = []}]}.
 
 
-send_message(Packet,From,To)->
+send_message(Packet,#offline_msg{from=From, to=To})->
     ejabberd_router:route(From, To, Packet).

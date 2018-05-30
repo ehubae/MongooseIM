@@ -7,7 +7,7 @@
 -module(mod_flexible_offline).
 -author('jaspreet@scrambleapps.com').
 -behaviour(gen_mod).
--export([start/2, stop/1, process_sm_iq/3,send_message/3]).
+-export([start/2, stop/1, process_sm_iq/3,send_message/2]).
 -include_lib("ejabberd/include/ejabberd.hrl").
 -include_lib("ejabberd/include/jlib.hrl").
 

@@ -10,15 +10,8 @@
 -export([start/2, stop/1, process_sm_iq/3,send_message/2]).
 -include_lib("ejabberd/include/ejabberd.hrl").
 -include_lib("ejabberd/include/jlib.hrl").
-
+-include_lib("ejabberd/include/mod_offline.hrl").
 -define(BACKEND, mod_flexible_offline_backend).
-
--type msg() :: #offline_msg{us :: {ejabberd:luser(), ejabberd:lserver()},
-timestamp :: erlang:timestamp(),
-expire :: erlang:timestamp() | never,
-from :: jid(),
-to :: jid(),
-packet :: exml:element()}.
 
 -callback init(Host, Opts) -> ok when
     Host :: binary(),

@@ -62,7 +62,7 @@ process_sm_iq(_From, _To, #iq{type = get,sub_el = SubEl} = IQ) ->
 
                     #xmlel{attrs = Attrs}=Packet,
                     From = xml:get_attr(<<"from">>, Attrs),
-                    ?DEBUG("Packet =  ~p", [Packet]),
+                    ?DEBUG("Packet =  ~p", [Attrs]),
                     spawn(?MODULE, send_message, [Packet,From,_From]) end, Rs);
             {error, Reason} ->
                 ?DEBUG("~ts@~ts: fetch_messages failed with ~p.", [FromUser, FromVHost, Reason]),

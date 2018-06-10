@@ -59,8 +59,11 @@ process_sm_iq(_From, _To, #iq{type = get,sub_el = SubEl} = IQ) ->
                 ?DEBUG("Rs =  ~p", [Rs]),
                 lists:map(fun(R) ->
                     Packet = mod_offline:resend_offline_message_packet(FromVHost, R),
+
+                    #xmlel{attrs = Attrs}=Packet,
+                    From = xml:get_attr(<<"from">>, Attrs),
                     ?DEBUG("Packet =  ~p", [Packet]),
-                    spawn(?MODULE, send_message, [Packet,Node,_From]) end, Rs);
+                    spawn(?MODULE, send_message, [Packet,From,_From]) end, Rs);
             {error, Reason} ->
                 ?DEBUG("~ts@~ts: fetch_messages failed with ~p.", [FromUser, FromVHost, Reason]),
                 []

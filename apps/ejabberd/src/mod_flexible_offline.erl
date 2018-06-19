@@ -56,6 +56,7 @@ process_sm_iq(_From, _To, #iq{type = get,sub_el = SubEl} = IQ) ->
         <<"view">> ->
         case ?BACKEND:fetch_messages(FromUser, FromVHost,Node) of
             {ok, Rs} ->
+                ?BACKEND:remove_messages(FromUser, FromVHost,Node),
                 ?DEBUG("Rs =  ~p", [Rs]),
                 lists:map(fun(R) ->
                     Packet = mod_offline:resend_offline_message_packet(FromVHost, R),

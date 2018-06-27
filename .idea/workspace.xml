@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_white_list.erl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_white_list_odbc.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deps/fusco" afterPath="$PROJECT_DIR$/deps/fusco" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" afterPath="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,51 +23,61 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mod_flexible_offline.erl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl">
+      <file leaf-file-name="mod_white_list.erl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_white_list.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="58" column="67" lean-forward="false" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+            <state relative-caret-position="633">
+              <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod_admin_extra_roster.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_admin_extra_roster.erl">
+      <file leaf-file-name="mod_white_list_odbc.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_white_list_odbc.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5670">
-              <caret line="378" column="16" lean-forward="false" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="16" />
+            <state relative-caret-position="405">
+              <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod_offline.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline.erl">
+      <file leaf-file-name="mod_vcard_odbc.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_vcard_odbc.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7770">
-              <caret line="518" column="53" lean-forward="false" selection-start-line="518" selection-start-column="47" selection-end-line="518" selection-end-column="53" />
+            <state relative-caret-position="423">
+              <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod_offline_push.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl">
+      <file leaf-file-name="odbc_queries.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="222" column="25" lean-forward="false" selection-start-line="222" selection-start-column="25" selection-end-line="222" selection-end-column="25" />
+            <state relative-caret-position="242">
+              <caret line="633" column="0" lean-forward="false" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jlib.erl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/jlib.erl">
+      <file leaf-file-name="mod_sync_contact.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2235">
-              <caret line="149" column="43" lean-forward="false" selection-start-line="149" selection-start-column="3" selection-end-line="149" selection-end-column="43" />
+            <state relative-caret-position="435">
+              <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod_sync_contact_odbc.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact_odbc.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="6" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -71,9 +85,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Erlang Module" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#vcard_search</find>
       <find>Sent</find>
       <find>make_sent_reply</find>
       <find>xmlel</find>
@@ -103,6 +123,7 @@
       <find>jid</find>
       <find>offline_msg</find>
       <find>inspect_packet</find>
+      <find>white</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,19 +144,23 @@
       <list>
         <option value="$PROJECT_DIR$/apps/ejabberd/include/mod_offline_push.hrl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_offline_push.erl" />
-        <option value="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" />
-        <option value="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/ejabberd_odbc.erl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline_odbc.erl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_offline.erl" />
         <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_whitelist.erl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact.erl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_white_list.erl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
+        <option value="$PROJECT_DIR$/apps/ejabberd/src/mod_white_list_odbc.erl" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="805" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -152,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,7 +234,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -704,7 +729,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -718,10 +743,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32398316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31697056" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3162612" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46638054" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29613733" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -732,6 +757,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253857" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -804,34 +830,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/mod_vcard.hrl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_vcard.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4455">
-          <caret line="297" column="62" lean-forward="false" selection-start-line="297" selection-start-column="51" selection-end-line="297" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/mod_roster.hrl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/pubsub.hrl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="20" lean-forward="false" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/fill_roster.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1056,24 +1054,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_last.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="153" column="68" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_vcard_odbc.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1088,13 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="53" column="74" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="809" column="16" lean-forward="false" selection-start-line="809" selection-start-column="0" selection-end-line="809" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1160,8 +1137,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_flexible_offline.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="318">
           <caret line="58" column="67" lean-forward="false" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/include/jlib.hrl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_vcard_odbc.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact_odbc.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="6" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="633" column="0" lean-forward="false" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_white_list_odbc.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_white_list.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="40" />
           <folding />
         </state>
       </provider>

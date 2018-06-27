@@ -105,7 +105,9 @@
        get_registered_contacts/3,
 	     remove_old_offline_messages/2,
 	     remove_expired_offline_messages/2,
-	     remove_offline_messages/3]).
+	     remove_offline_messages/3,
+       set_white_list/2,
+       get_white_list/1]).
 
 %% We have only two compile time options for db queries:
 %%-define(generic, true).
@@ -619,6 +621,20 @@ set_availability(LUsername,LServer, Availability) ->
     fun() ->
       update_t(<<"user_availability">>,[<<"username">>,<<"availability">>],[LUsername,Availability],[<<"username='">>,LUsername,"'"])
     end).
+
+
+set_white_list(LUsername,LServer) ->
+  ejabberd_odbc:sql_transaction(
+    LServer,
+    fun() ->
+      update_t(<<"white_list">>,[<<"username">>],[LUsername],[<<"username='">>,LUsername,"'"])
+    end).
+
+
+get_white_list(LServer)->
+  ejabberd_odbc:sql_query(
+    LServer,
+    [<<"select username from white_list;"]).
 
 get_availability(LServer, Username) ->
   ejabberd_odbc:sql_query(

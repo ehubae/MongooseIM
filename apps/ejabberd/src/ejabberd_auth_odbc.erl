@@ -164,7 +164,9 @@ try_register(LUser, LServer, Password) ->
     S = ejabberd_odbc:escape(LServer),
     PreparedPass = prepare_password(S, Password),
     case odbc_queries:is_white_list(LServer,Username) of
-        {selected, [<<"username">>], List} ->
+        {selected, [<<"username">>], []} ->
+            {error, exists};
+        {selected, [<<"username">>], [{User}]} ->
             case catch odbc_queries:add_user(LServer, Username, PreparedPass) of
                 {updated, 1} ->
                     ok;

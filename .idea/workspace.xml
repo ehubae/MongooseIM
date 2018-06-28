@@ -4,7 +4,6 @@
     <list default="true" id="53ec22fc-e09f-4aaa-8c0f-c2b4f007ad25" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/ejabberd_auth_odbc.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/ejabberd_auth_odbc.erl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" afterPath="$PROJECT_DIR$/apps/ejabberd/src/odbc_queries.erl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="ejabberd_auth_odbc.erl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/ejabberd_auth_odbc.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="174" column="27" lean-forward="false" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="27" />
+            <state relative-caret-position="407">
+              <caret line="168" column="44" lean-forward="false" selection-start-line="168" selection-start-column="44" selection-end-line="168" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -55,6 +54,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
               <caret line="639" column="0" lean-forward="false" selection-start-line="639" selection-start-column="0" selection-end-line="639" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mod_sync_contact_odbc.erl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact_odbc.erl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -732,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530172528073</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="check if user is white listed while registering.">
+      <created>1530181463522</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1530181463523</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -831,7 +847,8 @@
     <MESSAGE value="reverted recent changes" />
     <MESSAGE value="chenged from" />
     <MESSAGE value="white list mod." />
-    <option name="LAST_COMMIT_MESSAGE" value="white list mod." />
+    <MESSAGE value="check if user is white listed while registering." />
+    <option name="LAST_COMMIT_MESSAGE" value="check if user is white listed while registering." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1138,14 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact_odbc.erl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ejabberd_auth_http.erl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1202,10 +1211,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/mod_sync_contact_odbc.erl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/ejabberd/src/ejabberd_auth_odbc.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="174" column="27" lean-forward="false" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="27" />
+        <state relative-caret-position="407">
+          <caret line="168" column="44" lean-forward="false" selection-start-line="168" selection-start-column="44" selection-end-line="168" selection-end-column="44" />
           <folding />
         </state>
       </provider>

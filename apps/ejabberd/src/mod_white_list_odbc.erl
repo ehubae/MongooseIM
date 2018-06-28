@@ -25,7 +25,7 @@ get_white_list_users(VHost) ->
   S = ejabberd_odbc:escape(VHost),
   case odbc_queries:get_white_list(S) of
     {selected, [<<"username">>], List} ->
-      List;
+      fill_list(List);
     _ ->
       <<"">>
   end.
@@ -36,3 +36,11 @@ set_white_list_users(User,VHost) ->
   odbc_queries:set_white_list(U,S),
  ok.
 
+
+
+fill_list( [],Res) ->
+  lists:flatten(lists:join(",",Res));
+fill_list( [{ID} = I | Is],Res) ->
+  fill_list(Is,[ID|Res]).
+fill_list(List) ->
+  fill_list(List, []).

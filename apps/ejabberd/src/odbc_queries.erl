@@ -634,7 +634,7 @@ set_white_list(LUsername,LServer) ->
 get_white_list(LServer)->
   ejabberd_odbc:sql_query(
     LServer,
-    [<<"select username from white_list;"]).
+    [<<"select username from white_list;">>]).
 
 get_availability(LServer, Username) ->
   ejabberd_odbc:sql_query(

@@ -25,6 +25,7 @@ get_white_list_users(VHost) ->
   S = ejabberd_odbc:escape(VHost),
   case odbc_queries:get_white_list(S) of
     {selected, [<<"username">>], List} ->
+      ?DEBUG("white list ~p =", [List]),
       fill_list(List);
     _ ->
       <<"">>

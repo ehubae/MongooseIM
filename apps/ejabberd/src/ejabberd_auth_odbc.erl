@@ -161,13 +161,20 @@ set_password(LUser, LServer, Password) ->
                    ) -> ok | {error, exists}.
 try_register(LUser, LServer, Password) ->
     Username = ejabberd_odbc:escape(LUser),
-    PreparedPass = prepare_password(LServer, Password),
-    case catch odbc_queries:add_user(LServer, Username, PreparedPass) of
-        {updated, 1} ->
-            ok;
+    S = ejabberd_odbc:escape(LServer),
+    PreparedPass = prepare_password(S, Password),
+    case odbc_queries:is_white_list(LServer,Username) of
+        {selected, [<<"username">>], List} ->
+            case catch odbc_queries:add_user(LServer, Username, PreparedPass) of
+                {updated, 1} ->
+                    ok;
+                _ ->
+                    {error, exists}
+            end;
         _ ->
             {error, exists}
     end.
+
 
 -spec dirty_get_registered_users() -> [ejabberd:simple_bare_jid()].
 dirty_get_registered_users() ->

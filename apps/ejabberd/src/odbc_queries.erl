@@ -107,7 +107,8 @@
 	     remove_expired_offline_messages/2,
 	     remove_offline_messages/3,
        set_white_list/2,
-       get_white_list/1]).
+       get_white_list/1,
+       is_white_list/2]).
 
 %% We have only two compile time options for db queries:
 %%-define(generic, true).
@@ -635,6 +636,12 @@ get_white_list(LServer)->
   ejabberd_odbc:sql_query(
     LServer,
     [<<"select username from white_list;">>]).
+
+is_white_list(LServer, Username) ->
+  ejabberd_odbc:sql_query(
+    LServer,
+    [<<"select username from white_list "
+    "where username='">>, Username, "' ;"]).
 
 get_availability(LServer, Username) ->
   ejabberd_odbc:sql_query(

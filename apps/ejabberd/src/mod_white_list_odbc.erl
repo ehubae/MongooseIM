@@ -18,13 +18,18 @@
 
 -record(users, {username}).
 
+-define(FIELD(Var, Val),
+  #xmlel{name = <<"field">>, attrs = [{<<"var">>, Var}],
+    children = [#xmlel{name = <<"value">>,
+      children = [#xmlcdata{content = Val}]}]}).
+
 init(_Host, _Opts) ->
   ok.
 
 get_white_list_users(VHost) ->
   S = ejabberd_odbc:escape(VHost),
   case odbc_queries:get_white_list(S) of
-    {selected, [<<"username">>], List} ->
+    {selected, [<<"white_list_id">>,<<"username">>,<<"update_at">>], List} ->
       ?DEBUG("white list ~p =", [List]),
       fill_list(List);
     _ ->
@@ -40,8 +45,16 @@ set_white_list_users(User,VHost) ->
 
 
 fill_list( [],Res) ->
-  lists:flatten(lists:join(",",Res));
-fill_list( [{ID} = I | Is],Res) ->
-  fill_list(Is,[ID|Res]).
+  Res;
+fill_list( [I | Is],Res) ->
+  fill_list(Is,[record_to_item(I)|Res]).
 fill_list(List) ->
   fill_list(List, []).
+
+record_to_item({Id,UserName,UpdateAt}) ->
+  #xmlel{name = <<"item">>,
+    children = [
+      ?FIELD(<<"white_list_id">>,Id),
+      ?FIELD(<<"username">>,UserName),
+      ?FIELD(<<"update_at">>,UpdateAt)
+    ]}.

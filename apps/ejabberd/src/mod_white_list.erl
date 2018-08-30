@@ -54,5 +54,5 @@ process_sm_iq(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
     get ->
       #jid{user = FromUser, lserver = FromVHost} = From,
       List=?BACKEND:get_white_list_users(FromVHost),
-      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}, {<<"users">>, ejabberd_binary:string_to_binary(List)}], children = []}]}
+      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = List }]}
   end.

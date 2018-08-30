@@ -76,5 +76,5 @@ process_sm_iq_del(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
       ?BACKEND:rm_white_list_users(User,WhiteListId, FromVHost),
       IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = []}]};
     get ->
-      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = List }]}
+      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = [] }]}
   end.

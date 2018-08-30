@@ -633,10 +633,13 @@ set_white_list(LUsername,WhiteListId,LServer) ->
     end).
 
 rm_white_list(LUsername,WhiteListId,LServer) ->
-  ejabberd_odbc:sql_query_t(
+  ejabberd_odbc:sql_query(
+    LServer,
     [<<"delete from white_list "
     "where username='">>, LUsername, "' and white_list_id='", WhiteListId, "';"]),
-  ejabberd_odbc:sql_query_t(
+
+  ejabberd_odbc:sql_query(
+    LServer,
     [<<"delete from users "
     "where username='">>, LUsername, "';"]).
 

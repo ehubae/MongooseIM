@@ -11,7 +11,7 @@
 
 
 
--export([start/2, stop/1, process_sm_iq/3]).
+-export([start/2, stop/1, process_sm_iq/3,process_del_iq/3]).
 
 -include("../include/ejabberd.hrl").
 -include("../include/jlib.hrl").
@@ -43,11 +43,12 @@ start(Host, Opt) ->
   IQDisc = gen_mod:get_opt(iqdisc, Opt, one_queue),
   ?BACKEND:init(Host, Opt),
   gen_iq_handler:add_iq_handler(ejabberd_sm, Host,?NS_WHITE_LIST, ?MODULE, process_sm_iq, IQDisc),
-  gen_iq_handler:add_iq_handler(ejabberd_sm, Host,?NS_WHITE_LIST_DELETE, ?MODULE, process_sm_iq_del, IQDisc),
+  gen_iq_handler:add_iq_handler(ejabberd_del, Host,?NS_WHITE_LIST_DELETE, ?MODULE, process_del_iq, IQDisc),
   ejabberd_hooks:add(get_registered_contacts, Host, ?MODULE, get_registered_contacts, 50).
 
 stop(Host) ->
-  gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_WHITE_LIST).
+  gen_iq_handler:remove_iq_handler(ejabberd_sm, Host, ?NS_WHITE_LIST),
+  gen_iq_handler:remove_iq_handler(ejabberd_del, Host, ?NS_WHITE_LIST_DELETE).
 
 
 -spec process_sm_iq(ejabberd:jid(), ejabberd:jid(), ejabberd:iq()) -> ejabberd:iq().
@@ -66,8 +67,8 @@ process_sm_iq(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
   end.
 
 
--spec process_sm_iq_del(ejabberd:jid(), ejabberd:jid(), ejabberd:iq()) -> ejabberd:iq().
-process_sm_iq_del(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
+-spec process_del_iq(ejabberd:jid(), ejabberd:jid(), ejabberd:iq()) -> ejabberd:iq().
+process_del_iq(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
   case Type of
     set ->
       #jid{user = FromUser, lserver = FromVHost} = From,

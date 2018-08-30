@@ -13,7 +13,7 @@
 -include("../include/ejabberd.hrl").
 -include("../include/jlib.hrl").
 
--export([init/2,get_white_list_users/1,set_white_list_users/2]).
+-export([init/2,get_white_list_users/1,set_white_list_users/3]).
 
 
 -record(users, {username}).
@@ -36,10 +36,10 @@ get_white_list_users(VHost) ->
       <<"">>
   end.
 
-set_white_list_users(User,VHost) ->
+set_white_list_users(User,WhiteListId,VHost) ->
   U = ejabberd_odbc:escape(User),
   S = ejabberd_odbc:escape(VHost),
-  odbc_queries:set_white_list(U,S),
+  odbc_queries:set_white_list(U,WhiteListId,S),
  ok.
 
 

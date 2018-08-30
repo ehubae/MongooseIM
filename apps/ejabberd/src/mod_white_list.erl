@@ -28,8 +28,9 @@
 -callback get_white_list_users(VHost) -> any() when
   VHost :: binary().
 
--callback set_white_list_users(User,VHost) -> any() when
+-callback set_white_list_users(User,WhiteListId,VHost) -> any() when
   User :: binary(),
+  WhiteListId :: binary(),
   VHost :: binary().
 
 start(Host, Opt) ->
@@ -48,8 +49,9 @@ process_sm_iq(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
   case Type of
     set ->
       #jid{user = FromUser, lserver = FromVHost} = From,
-      User = xml:get_path_s(Sub_Ele, [{elem, <<"user">>}, cdata]),
-      ?BACKEND:set_white_list_users(User, FromVHost),
+      User = xml:get_path_s(Sub_Ele, [{elem, <<"username">>}, cdata]),
+      WhiteListId = xml:get_path_s(Sub_Ele, [{elem, <<"white_list_id">>}, cdata]),
+      ?BACKEND:set_white_list_users(User,WhiteListId, FromVHost),
       IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = []}]};
     get ->
       #jid{user = FromUser, lserver = FromVHost} = From,

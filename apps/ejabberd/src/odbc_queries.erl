@@ -107,6 +107,7 @@
 	     remove_expired_offline_messages/2,
 	     remove_offline_messages/3,
        set_white_list/3,
+       rm_white_list/3,
        get_white_list/1,
        is_white_list/2]).
 
@@ -630,6 +631,14 @@ set_white_list(LUsername,WhiteListId,LServer) ->
     fun() ->
       update_t(<<"white_list">>,[<<"username">>],[LUsername],[<<"white_list_id='">>,WhiteListId,"'"])
     end).
+
+rm_white_list(LUsername,WhiteListId,LServer) ->
+  ejabberd_odbc:sql_query_t(
+    [<<"delete from white_list "
+    "where username='">>, LUsername, "' and white_list_id='", WhiteListId, "';"]),
+  ejabberd_odbc:sql_query_t(
+    [<<"delete from users "
+    "where username='">>, LUsername, ";"]).
 
 
 get_white_list(LServer)->

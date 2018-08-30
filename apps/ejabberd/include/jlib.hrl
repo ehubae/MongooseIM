@@ -51,6 +51,7 @@
 -define(NS_IQDATA,       <<"jabber:iq:data">>).
 -define(NS_CONTACT,       <<"jabber:iq:contact">>).
 -define(NS_WHITE_LIST,       <<"jabber:iq:whitelist">>).
+-define(NS_WHITE_LIST_DELETE,       <<"jabber:iq:whitelist:delete">>).
 -define(NS_DELAY91,      <<"jabber:x:delay">>). % TODO: Remove once XEP-0091 is Obsolete
 -define(NS_DELAY,        <<"urn:xmpp:delay">>).
 -define(NS_EXPIRE,       <<"jabber:x:expire">>).

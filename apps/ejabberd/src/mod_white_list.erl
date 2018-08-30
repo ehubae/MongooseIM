@@ -75,7 +75,7 @@ process_del_iq(From, To, #iq{type = Type, sub_el = Sub_Ele} = IQ) ->
       User = xml:get_path_s(Sub_Ele, [{elem, <<"username">>}, cdata]),
       WhiteListId = xml:get_path_s(Sub_Ele, [{elem, <<"white_list_id">>}, cdata]),
       ?BACKEND:rm_white_list_users(User,WhiteListId, FromVHost),
-      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = []}]};
+      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST_DELETE}], children = []}]};
     get ->
-      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST}], children = [] }]}
+      IQ#iq{type = result, sub_el = [#xmlel{name = <<"query">>, attrs = [{<<"xmlns">>, ?NS_WHITE_LIST_DELETE}], children = [] }]}
   end.

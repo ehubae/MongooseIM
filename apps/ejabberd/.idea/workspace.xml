@@ -4,7 +4,6 @@
     <list default="true" id="99b6d422-4f4b-4609-9797-d5287415649e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mod_white_list.erl" beforeDir="false" afterPath="$PROJECT_DIR$/src/mod_white_list.erl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mod_white_list.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="211">
+              <caret line="45" column="96" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -84,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/odbc_queries.erl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="648" column="35" lean-forward="true" selection-start-line="648" selection-start-column="35" selection-end-line="648" selection-end-column="35" />
+            <state relative-caret-position="308">
+              <caret line="640" column="38" selection-start-line="640" selection-start-column="38" selection-end-line="640" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -116,6 +115,7 @@
       <find>rm_white_list_users</find>
       <find>rm_white_list</find>
       <find>process_sm_iq_del</find>
+      <find>process_del_iq</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535662089293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535662830290" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
   </component>
   <component name="RunDashboard">
@@ -362,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535661705196</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="delete white list set">
+      <created>1535662105590</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535662105590</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -530,17 +537,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/odbc_queries.erl">
+    <entry file="file://$PROJECT_DIR$/src/mod_white_list.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="648" column="35" lean-forward="true" selection-start-line="648" selection-start-column="35" selection-end-line="648" selection-end-column="35" />
+        <state relative-caret-position="211">
+          <caret line="45" column="96" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="96" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mod_white_list.erl">
+    <entry file="file://$PROJECT_DIR$/src/odbc_queries.erl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="308">
+          <caret line="640" column="38" selection-start-line="640" selection-start-column="38" selection-end-line="640" selection-end-column="38" />
         </state>
       </provider>
     </entry>

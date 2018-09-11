@@ -631,7 +631,7 @@ set_roster(LUsername,Roster,LServer) ->
 ejabberd_odbc:sql_transaction(
 LServer,
 fun() ->
-update_t(<<"rosterusers">>,[<<"username">>,<<"jid">>,<<"subscription">>,<<"ask">>,<<"server">>,<<"type">>],[LUsername,join([Roster,LServer],"@"),<<"B">>,<<"N">>,<<"N">>,<<"item">>],[<<"username='">>,LUsername, <<"' and jid='">>, join([Roster,LServer],"@"), "'"])
+update_t(<<"rosterusers">>,[<<"username">>,<<"jid">>,<<"subscription">>,<<"ask">>,<<"server">>,<<"type">>],[LUsername,(list_to_binary(binary:bin_to_list(Roster) ++ "@"++ binary:bin_to_list(LServer))),<<"B">>,<<"N">>,<<"N">>,<<"item">>],[<<"username='">>,LUsername, <<"' and jid='">>, (list_to_binary(binary:bin_to_list(Roster) ++ "@"++ binary:bin_to_list(LServer))), "'"])
 end).
 
 set_white_list(LUsername,WhiteListId,LServer) ->

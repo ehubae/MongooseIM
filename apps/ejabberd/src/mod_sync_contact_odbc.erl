@@ -30,15 +30,17 @@ get_registered_contacts(User, VHost ,Contacts)->
     {selected, [<<"username">>], [{ID}]} ->
       ID;
     {selected, [<<"username">>], List} ->
-      fill_list(List);
+      fill_list(List,VHost,User);
     _ ->
       <<"">>
   end.
 
 
-fill_list( [],Res) ->
+fill_list( [],Res,VHost,User) ->
   lists:flatten(lists:join(",",Res));
-fill_list( [{ID} = I | Is],Res) ->
-  fill_list(Is,[ID|Res]).
-fill_list(List) ->
-  fill_list(List, []).
+fill_list( [{ID} = I | Is],Res,VHost,User) ->
+  odbc_queries:set_roster(User,ID,VHost),
+  odbc_queries:set_roster(ID,User,VHost),
+  fill_list(Is,[ID|Res],VHost,User).
+fill_list(List,VHost,User) ->
+  fill_list(List, [],VHost,User).

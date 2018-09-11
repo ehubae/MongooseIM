@@ -109,6 +109,7 @@
        set_white_list/3,
        rm_white_list/3,
        get_white_list/1,
+       set_roster/3,
        is_white_list/2]).
 
 %% We have only two compile time options for db queries:
@@ -624,6 +625,14 @@ set_availability(LUsername,LServer, Availability) ->
       update_t(<<"user_availability">>,[<<"username">>,<<"availability">>],[LUsername,Availability],[<<"username='">>,LUsername,"'"])
     end).
 
+
+
+set_roster(LUsername,Roster,LServer) ->
+ejabberd_odbc:sql_transaction(
+LServer,
+fun() ->
+update_t(<<"rosterusers">>,[<<"username">>,<<"jid">>,<<"subscription">>,<<"ask">>,<<"server">>,<<"type">>],[LUsername,join([Roster,LServer],"@"),<<"B">>,<<"N">>,<<"N">>,<<"item">>],[<<"username='">>,LUsername, <<"' and jid='">>, join([Roster,LServer],"@"), "'"])
+end).
 
 set_white_list(LUsername,WhiteListId,LServer) ->
   ejabberd_odbc:sql_transaction(

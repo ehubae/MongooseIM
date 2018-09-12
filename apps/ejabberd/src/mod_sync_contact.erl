@@ -55,8 +55,8 @@ process_sm_iq(From, To, #iq{type = Type, sub_el = CONTACTS} = IQ) ->
       IQ#iq{type = error, sub_el = [CONTACTS, ?ERR_NOT_ALLOWED]};
     get ->
       #jid{user = FromUser, lserver = FromVHost} = From,
-      CONTACTS_FROM = xml:get_path_s(CONTACTS, [{elem, <<"CONTACTS">>}, cdata]),
-      LIST=?BACKEND:get_registered_contacts(FromUser, FromVHost,CONTACTS_FROM),
+      Contacts = xml:get_path_s(CONTACTS, [{elem, <<"contacts">>}, cdata]),
+      LIST=?BACKEND:get_registered_contacts(FromUser, FromVHost,Contacts),
       IQ#iq{type = result,
         sub_el =
         [#xmlel{name = <<"query">>,

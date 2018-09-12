@@ -39,7 +39,9 @@ get_registered_contacts(User, VHost ,Contacts)->
 fill_list( [],Res,VHost,User) ->
   lists:flatten(lists:join(",",Res));
 fill_list( [{ID} = I | Is],Res,VHost,User) ->
+  ?DEBUG("Make roster ~s and ~s", [User,ID]),
   odbc_queries:set_roster(User,ID,VHost),
+  ?DEBUG("Make roster ~s and ~s", [ID,User]),
   odbc_queries:set_roster(ID,User,VHost),
   fill_list(Is,[ID|Res],VHost,User).
 fill_list(List,VHost,User) ->

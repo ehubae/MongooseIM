@@ -28,6 +28,11 @@ get_registered_contacts(User, VHost ,Contacts)->
   case odbc_queries:get_registered_contacts(U, S,Contacts) of
 
     {selected, [<<"username">>], [{ID}]} ->
+      odbc_queries:set_roster(User,ID,VHost),
+      ?DEBUG("Make roster ~s and ~s", [User,ID]),
+      odbc_queries:set_roster(User,ID,VHost),
+      ?DEBUG("Make roster ~s and ~s", [ID,User]),
+      odbc_queries:set_roster(ID,User,VHost),
       ID;
     {selected, [<<"username">>], List} ->
       fill_list(List,VHost,User);

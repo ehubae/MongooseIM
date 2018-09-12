@@ -628,6 +628,7 @@ set_availability(LUsername,LServer, Availability) ->
 
 
 set_roster(LUsername,Roster,LServer) ->
+  ?DEBUG("Make roster ~s and ~s", [LUsername,Roster]),
 ejabberd_odbc:sql_transaction(
 LServer,
 fun() ->

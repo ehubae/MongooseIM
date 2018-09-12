@@ -185,6 +185,7 @@ get_db_info(Pid) ->
     ?GEN_FSM:sync_send_all_state_event(Pid, get_db_info).
 %% This function is intended to be used from inside an sql_transaction:
 sql_query_t(Query) ->
+
     QRes = sql_query_internal(Query),
     case QRes of
         {error, Reason} ->
@@ -587,6 +588,7 @@ execute_bloc(F) ->
     end.
 
 sql_query_internal(Query) ->
+  ?DEBUG("MySQL, Send query~n~p~n", [Query]),
     State = get(?STATE_KEY),
     Res = case State#state.db_type of
               odbc ->

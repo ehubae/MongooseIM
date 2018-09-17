@@ -203,7 +203,7 @@ get_last_iq(IQ, SubEl, LUser, LServer) ->
                             attrs =
                             [{<<"xmlns">>, ?NS_LAST},
                                 {<<"seconds">>,
-                                    integer_to_binary(Sec)}],
+                                    integer_to_binary(Sec)},{<<"epoch">>,integer_to_binart(TimeStamp)}],
                             children = [{xmlcdata, Status}]}]}
             end;
         _ ->

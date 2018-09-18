@@ -155,31 +155,7 @@ process_sm_iq(From, To,
         get ->
             User = To#jid.luser,
             Server = To#jid.lserver,
-            {Subscription, _Groups} =
-                ejabberd_hooks:run_fold(roster_get_jid_info, Server,
-                    {none, []}, [User, Server, From]),
-            if (Subscription == both) or (Subscription == from) or
-                (From#jid.luser == To#jid.luser) and
-                    (From#jid.lserver == To#jid.lserver) ->
-                UserListRecord =
-                    ejabberd_hooks:run_fold(privacy_get_user_list, Server,
-                        #userlist{}, [User, Server]),
-                case ejabberd_hooks:run_fold(privacy_check_packet,
-                    Server, allow,
-                    [User, Server, UserListRecord,
-                        {To, From,
-                            #xmlel{name = <<"presence">>,
-                                attrs = [],
-                                children = []}},
-                        out])
-                of
-                    allow -> get_last_iq(IQ, SubEl, User, Server);
-                    deny ->
-                        IQ#iq{type = error, sub_el = [SubEl, ?ERR_FORBIDDEN]}
-                end;
-                true ->
-                    IQ#iq{type = error, sub_el = [SubEl, ?ERR_FORBIDDEN]}
-            end
+            get_last_iq(IQ, SubEl, User, Server)
     end.
 
 -spec get_last_iq(ejabberd:iq(), SubEl :: 'undefined' | [jlib:xmlel()],

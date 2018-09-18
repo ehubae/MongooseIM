@@ -161,8 +161,8 @@ process_sm_iq(From, To,
 -spec get_last_iq(ejabberd:iq(), SubEl :: 'undefined' | [jlib:xmlel()],
                   ejabberd:luser(), ejabberd:lserver()) -> ejabberd:iq().
 get_last_iq(IQ, SubEl, LUser, LServer) ->
-    case ejabberd_sm:get_user_resources(LUser, LServer) of
-        [] ->
+%%    case ejabberd_sm:get_user_resources(LUser, LServer) of
+%%        [] ->
             case get_last(LUser, LServer) of
                 {error, _Reason} ->
                     IQ#iq{type = error,
@@ -181,16 +181,16 @@ get_last_iq(IQ, SubEl, LUser, LServer) ->
                                 {<<"seconds">>,
                                     integer_to_binary(Sec)},{<<"epoch">>,integer_to_binary(TimeStamp)}],
                             children = [{xmlcdata, Status}]}]}
-            end;
-        _ ->
-            IQ#iq{type = result,
-                sub_el =
-                [#xmlel{name = <<"query">>,
-                    attrs =
-                    [{<<"xmlns">>, ?NS_LAST},
-                        {<<"seconds">>, <<"0">>}],
-                    children = []}]}
-    end.
+            end.
+%%        _ ->
+%%            IQ#iq{type = result,
+%%                sub_el =
+%%                [#xmlel{name = <<"query">>,
+%%                    attrs =
+%%                    [{<<"xmlns">>, ?NS_LAST},
+%%                        {<<"seconds">>, <<"0">>}],
+%%                    children = []}]}
+%%    end.
 
 get_last(LUser, LServer) ->
     ?BACKEND:get_last(LUser, LServer).
